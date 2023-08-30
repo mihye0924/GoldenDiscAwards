@@ -1,0 +1,24 @@
+.header { 
+  &_wrap {
+    position: fixed;
+    width: $h-width;
+    // border:1px solid #fff;
+    height: 80px; 
+    padding: 0 20px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+  } 
+  &_logo {
+    font-family: $popins-bold;
+    font-size: $fs44; 
+  } 
+  &_left {
+    display: flex;
+    align-items: center;
+  }
+  &_right {
+    display: flex;
+    gap: 30px;
+  }
+}

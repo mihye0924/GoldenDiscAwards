@@ -12,11 +12,38 @@ $fs74: 74px;
 $fs116: 116px; 
 $fs148: 148px; 
 
-// Custom color
-$black: #000;
+//Custum font-weight
+$fw100: 100; 
+$fw300: 300;
+$fw500: 500; 
+$fw800: 800; 
+$fw900: 900; 
+
 
 // Custom layout
 $h-width: 1700px;
 $m-width: 1200px;
 $f-width: 1700px;
+
+// font - NotoSans
+$noto-bold : 'NotoSans-Bold'; 
+$noto-medium : 'NotoSans-Medium'; 
+$noto-regular : 'NotoSans-Regular'; 
+$noto-light : 'NotoSans-Light';
+$noto-thin : 'NotoSans-Thin';
+
+// font - poppins
+$popins-extra-b : 'Poppins-ExtraBold';
+$popins-extra-l : 'Poppins-ExtraLight'; 
+$popins-bold : 'Poppins-Bold'; 
+$popins-light : 'Poppins-Light'; 
+$popins-medium : 'Poppins-Medium'; 
+$popins-regular : 'Poppins-Regular'; 
+$popins-semi-bold : 'Poppins-SemiBold'; 
+$popins-thin : 'Poppins-Thin'; 
+
  
+// Custom color
+$black: #000;
+$white: #fff;
+

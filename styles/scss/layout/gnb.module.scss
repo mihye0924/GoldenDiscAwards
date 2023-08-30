@@ -1,0 +1,11 @@
+.gnb{
+  &_wrap {}
+  &_gnb { 
+    display: flex;
+    margin-left: 100px;
+    li {
+      font-size: $fs16;
+      margin: 0 20px;
+    }
+  } 
+}

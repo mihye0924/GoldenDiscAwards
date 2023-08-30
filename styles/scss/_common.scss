@@ -1,19 +1,19 @@
+
 .l { 
     &-header {
         width: $h-width;
         margin: 0 auto;
-        border:1px solid $black;
     }
 
     &-content {
         width: $m-width;
+        height: 4800px;
+        padding-top: 80px;
         margin: 0 auto;
-        border: 1px solid $black;
     }
 
     &-footer {
         width: $f-width;
         margin: 0 auto;
-        border: 1px solid $black;
     }
 }

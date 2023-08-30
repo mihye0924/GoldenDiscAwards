@@ -1,9 +1,23 @@
-import header from '@/styles/header.module.scss'
+import header from '@/styles/scss/layout/header.module.scss'
+import GNB from '@/components/layout/Gnb'
+import Nav from '@/components/layout/Nav'
 export default function Header() {
     return (
         <div className="l-header">
-            <div className={header.header}>
-                헤더
+            <div className={header.header_wrap}>
+                <div className={header.header_left}>
+                    <div className={header.header_logo}> 
+                        GOLDENDISCAWARDS
+                    </div>
+                    <GNB />
+                </div>
+                <div className={header.header_right}>
+                    <div className={header.header_lang}>
+                        <input type='radio' name='lang' title='KO' />
+                        <input type='radio' name='lang' title='EN'/>
+                    </div>
+                    <Nav />
+                </div>
             </div>
         </div>
     )

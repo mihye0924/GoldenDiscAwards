@@ -1,5 +1,5 @@
-import '@/styles/scss/reset.scss'
-import '@/styles/scss/_global.scss'
+
+import '@/styles/scss/index.scss'
 import Head from 'next/head'; 
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
