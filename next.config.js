@@ -1,15 +1,11 @@
 /** @type {import('next').NextConfig} */
+const path = require('path')
 
-const path = require('path');
 const nextConfig = {
   reactStrictMode: true,
-  configureWebpack: {
-    resolve: {
-        alias: {
-            '@': path.join(__dirname, 'src/')
-        }
-    }
-  }
+  sassOptions: {
+    includePaths: [path.join(__dirname, 'styles')],
+    prependData: `@import "styles/scss/_variables.scss";`
+  },
 }
-
 module.exports = nextConfig
