@@ -1,0 +1,50 @@
+.main {
+  &_wrap {
+    position: relative;
+    margin: 80px 0 120px 0;
+    height: calc(100vh - 80px);
+  }
+  &_title {
+    &_t {
+      font-family: $popins-extra-b;
+      font-size: $fs148;
+      position: absolute;
+      right: 0;
+      bottom: 50%;
+      text-align: right;
+      z-index: 1;
+      p {
+        line-height: $lineH;
+      }
+    }
+    &_b {
+      position: absolute;
+          bottom: 35px;
+          left: 0;
+          font-family: "Poppins-ExtraLight";
+          font-size: 20px; 
+    }
+  }
+  &_img_wrap {
+    &_1 {
+      position: absolute;
+      width: 560px;
+      height: 560px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      background: linear-gradient( to right, #ff009d 2%, #ff6363 60%, #fb0089 );
+      border-radius: 50%;
+    }
+    &_2 {
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      background-color: $black; 
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      border-radius: 50%;
+    }
+  }
+}

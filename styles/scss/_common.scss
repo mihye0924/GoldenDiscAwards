@@ -1,19 +1,38 @@
 
 .l { 
     &-header {
-        width: $h-width;
+        width: $width;
         margin: 0 auto;
+        padding: 0 20px;
     }
 
     &-content {
-        width: $m-width;
-        height: 4800px;
-        padding-top: 80px;
+        display: flex;
+        flex-direction: column;
+        width: $width; 
         margin: 0 auto;
+        padding: 0 20px;
     }
 
     &-footer {
-        width: $f-width;
-        margin: 0 auto;
+        border-top: 1px solid $darkgray;
+        // width: $width;
+        // margin: 0 auto;
+        // padding: 0 20px;
     }
 }
+
+// flex
+
+.flex {
+    display: flex;
+}
+.space-between {
+    justify-content: space-between;
+}
+
+// text
+
+// .left { text-align: left; }
+// .right { text-align: right; }
+// .center { text-align: center; } 

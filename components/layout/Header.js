@@ -13,8 +13,8 @@ export default function Header() {
                 </div>
                 <div className={header.header_right}>
                     <div className={header.header_lang}>
-                        <input type='radio' name='lang' title='KO' />
-                        <input type='radio' name='lang' title='EN'/>
+                        <button>KO</button>
+                        <button>EN</button>
                     </div>
                     <Nav />
                 </div>

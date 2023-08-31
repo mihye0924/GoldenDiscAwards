@@ -9,6 +9,7 @@ $fs33: 33px;
 $fs36: 36px; 
 $fs44: 44px; 
 $fs74: 74px; 
+$fs85: 85px;
 $fs116: 116px; 
 $fs148: 148px; 
 
@@ -19,11 +20,11 @@ $fw500: 500;
 $fw800: 800; 
 $fw900: 900; 
 
+// Custom line-height
+$lineH: 1;
 
 // Custom layout
-$h-width: 1700px;
-$m-width: 1200px;
-$f-width: 1700px;
+$width: 1700px;
 
 // font - NotoSans
 $noto-bold : 'NotoSans-Bold'; 
@@ -45,5 +46,7 @@ $popins-thin : 'Poppins-Thin';
  
 // Custom color
 $black: #000;
+$darkgray:  #2b2b2b;
+$lightgray:  #c5c5c5;
 $white: #fff;
-
+$pink: #fd267b

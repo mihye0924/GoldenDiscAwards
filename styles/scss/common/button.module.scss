@@ -1,0 +1,49 @@
+.button {
+  &_wrap {
+    button {
+      cursor: pointer;
+      background-color: transparent; 
+      color: $white;
+      font-size: $fs20;
+      border: none; 
+      display: flex;
+      align-items: center;
+      height: 80px;
+      border-radius: 10px;
+      margin-top: 20px;
+      p {
+        display: inline-block;
+        margin-left: 10px;
+        background-color: $darkgray;
+        padding: 5px;
+        border-radius: 50px;
+        width: 25px;
+        height: 25px;
+        img {
+          width: 25px;
+          height: 25px;
+        }
+      }
+    }
+  }
+  &_title {
+    &_wrap {   
+      display: flex;
+      align-items: flex-end;
+      span {
+        margin: 0 0 30px 20px;
+        font-size: $fs20;
+      }  
+    }
+    font-size: $fs85;
+    font-family: $popins-medium;
+    background: linear-gradient( to right, #ff009d 2%, #ff6363 60%, #fb0089 );
+    background-clip: text; 
+	  -webkit-background-clip: text; 
+	  color: transparent;
+  } 
+}
+
+.center { 
+  margin: 0 auto;
+}

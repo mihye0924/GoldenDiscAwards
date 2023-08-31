@@ -1,13 +1,13 @@
 .header { 
   &_wrap {
     position: fixed;
-    width: $h-width;
+    width: $width;
     // border:1px solid #fff;
     height: 80px; 
-    padding: 0 20px;
     display: flex; 
     justify-content: space-between;
     align-items: center;
+    z-index: 2;
   } 
   &_logo {
     font-family: $popins-bold;
@@ -19,6 +19,18 @@
   }
   &_right {
     display: flex;
+    align-items: center;
     gap: 30px;
+  }
+  &_lang {
+    button {
+      cursor: pointer;
+      background-color: transparent;
+      border: none;
+      color: $white;
+      &:first-child {
+        margin-right: 30px;
+      }
+    }
   }
 }
