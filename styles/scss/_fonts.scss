@@ -53,3 +53,15 @@
   font-family: 'Poppins-Thin'; 
   src: url("../fonts/Poppins-Thin.woff") format("woff");
 } 
+
+
+@import url(https://db.onlinewebfonts.com/c/f6aa15866bffca161454d7554a004259?family=Monoton);
+@font-face {
+  font-family: "Monoton";
+  src: url("https://db.onlinewebfonts.com/t/f6aa15866bffca161454d7554a004259.eot");
+  src: url("https://db.onlinewebfonts.com/t/f6aa15866bffca161454d7554a004259.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/f6aa15866bffca161454d7554a004259.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/f6aa15866bffca161454d7554a004259.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/f6aa15866bffca161454d7554a004259.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/f6aa15866bffca161454d7554a004259.svg#Monoton")format("svg");
+}

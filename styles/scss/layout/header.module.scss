@@ -1,13 +1,40 @@
-.header { 
+.header {
   &_wrap {
+    width: 100%;
     position: fixed;
-    width: $width;
-    // border:1px solid #fff;
+    left: 0;
+    z-index: 2;
+    &.active {
+      background-color:rgb(255 255 255 / 12%);
+      transition: all 0.5s linear; 
+    }
+  } 
+   
+  &_gnb { 
+    display: flex;
+    margin-left: 100px;
+    li {
+      font-size: $fs16;
+      margin: 0 15px;
+      padding: 8px 20px;
+      border: 2px solid transparent;
+      &:hover {
+        border: 2px solid $pink;
+        border-radius: 5px;
+        a {   
+          color: $pink;
+        }
+      } 
+    }
+  } 
+  &_inner {
+    width: $width; 
+    margin: 0 auto;
+    padding: 0 20px;
     height: 80px; 
     display: flex; 
     justify-content: space-between;
     align-items: center;
-    z-index: 2;
   } 
   &_logo {
     font-family: $popins-bold;
@@ -33,4 +60,37 @@
       }
     }
   }
+  &_menu {
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    span {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%); 
+      display: block;
+      width: 25px;
+      height: 2px;
+      background-color: $white;
+      &::before {
+        position: absolute;
+        content: '';
+        width: 25px;
+        height: 2px;
+        background-color: $white;
+        display: block;
+        top: -10px;
+      }
+      &:after {
+        position: absolute;
+        content: '';
+        width: 25px;
+        height: 2px;
+        background-color: $white;
+        display: block;
+        bottom: -10px;
+      }
+    }
+  }
 }
+ 

@@ -1,0 +1,17 @@
+.title {
+  &_wrap{
+    margin-top: 120px;
+    h1 {
+      line-height: $lineH;
+      font-family: $popins-bold;
+      font-size: $fs148;
+      background: linear-gradient(to left, #ff009d 64%, #ff6363 91%, #fb0089 252%);
+      background-clip: text; 
+      -webkit-background-clip: text; 
+      color: transparent; 
+      span{
+        display: block; 
+      }
+    }
+  }
+}

@@ -1,9 +1,7 @@
 
 .l { 
     &-header {
-        width: $width;
-        margin: 0 auto;
-        padding: 0 20px;
+        padding: 0 20px; 
     }
 
     &-content {
@@ -11,7 +9,7 @@
         flex-direction: column;
         width: $width; 
         margin: 0 auto;
-        padding: 0 20px;
+        padding: 80px 0 20px 0;
     }
 
     &-footer {

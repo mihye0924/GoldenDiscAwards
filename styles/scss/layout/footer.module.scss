@@ -2,6 +2,75 @@
   &_wrap {
     width: $width;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 40px 20px;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    h1 {
+      a { 
+          font-family: $popins-medium;
+          font-size: $fs44;
+          span {
+            font-family: $noto-medium;
+            display: block;
+            text-align: right;
+            font-size: $fs18;
+            background: linear-gradient(to right, #ff009d 2%, #ff6363 60%, #fb0089);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+          }
+       }
+    }
   } 
+  &_sns {
+    &_wrap {
+      border-bottom: 1px solid $darkgray;
+    }
+    width: $width;
+    margin: 0 auto;
+    padding: 15px 20px;  
+    display: flex; 
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    li {
+      &:nth-of-type(2) {
+        img {
+          width: auto;
+          height: 25px;
+        }
+      }
+    }
+    a {
+      img {
+        width: 20px; 
+      }
+    }
+  }
+  &_nav {
+    width: 580px;
+    &_ul {
+      display: flex;  
+      justify-content: space-between; 
+      li {
+        font-family: $popins-medium;
+        span { font-size: $fs18; }
+      }
+      &_sub {
+        margin-top: 20px;
+        li {
+          margin-bottom: 10px;
+          span { 
+            font-family: $noto-regular;
+            font-size: $fs16;
+            color: $lightgray; 
+          }
+        }
+      }
+    }
+  }
 }
+
+ 

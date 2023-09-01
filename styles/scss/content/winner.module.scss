@@ -1,8 +1,21 @@
 .winner {
   &_wrap {
-    margin: 120px 0;
+    margin: 100px 20px;
   }
   &_box {
+    div { 
+      &:nth-child(2) {
+        .winner_box_img {
+          &:hover {
+            &::after {
+              position: absolute;
+              content: '';
+              background: linear-gradient(to top, #04002b 2%, #6f9bff 60%, #005aff);
+            }
+          }
+        }
+      }
+    }
     display: flex;
     justify-content: space-between;
     &_t {
@@ -19,11 +32,25 @@
           font-size: $fs22;
         }
       }
-    }
-    &_img {  
+    } 
+    &_img { 
+      position: relative;
       overflow: hidden;
+      width: 840px;
       height: 800px;
-      img { 
+      &:hover {
+       &::after {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        background: linear-gradient( to top, #ff009d 2%, #ff6363 60%, #000 );
+        opacity: 0.3;
+       }
+      } 
+      img {  
         width: 840px;
       }
     }
