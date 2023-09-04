@@ -40,6 +40,7 @@
   }
   &_intro { 
     margin: 120px 0;
+    padding: 0 20px;
     display: flex;
     align-items: flex-end;
     flex-direction: column;
@@ -57,9 +58,7 @@
       tr {
         td {
           padding: 20px 40px 20px 0;
-          font-size: $fs18;
-          &:first-child { 
-          }
+          font-size: $fs20; 
           img {
             width: 100%;
           }
@@ -75,13 +74,76 @@
       tr {
         td {
           padding: 20px 40px 20px 0;
+          font-size: $fs20; 
+        }
+        div {
+          display: flex;
+          align-items: center;
+        }
+        &:nth-of-type(1) {
+          img { 
+            margin-right: 30px;
+            &:nth-of-type(1) {
+              width: 60px;
+            }
+            &:nth-of-type(2),
+            &:nth-of-type(3) {
+              width: 82px;
+            }
+          }
+        } 
+        &:nth-of-type(2) {
+          img {
+            margin-right: 30px;
+            &:nth-of-type(1){
+              width: 120px;
+            }
+            &:nth-of-type(2) {
+              width: 190px;
+            }
+            &:nth-of-type(3) {
+              width: 95px;
+            }
+          }
+        }
+        &:nth-of-type(3) {
+          img {
+            margin-right: 30px;
+            &:nth-of-type(1){
+              width: 120px;
+            }
+            &:nth-of-type(2) {
+              width: 105px;
+            }
+            &:nth-of-type(3) {
+              width: 200px;
+            }
+            &:nth-of-type(4) {
+              width: 145px;
+            }
+          }
         }
       } 
 
     }
     &_t { 
+      font-family: $popins-medium;
       font-size: $fs20 !important;
       vertical-align: baseline; 
+    }
+  }
+  &_division {
+    display: flex; 
+    margin: 120px 0;
+    padding: 0 20px;
+    p {
+      font-size: $fs44;
+      font-family: $popins-bold;
+      margin-right: 150px;
+    }
+    &_div {
+      font-size: $fs20;
+      color: $lightgray;
     }
   }
 }

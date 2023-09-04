@@ -29,8 +29,7 @@
   } 
   &_inner {
     width: $width; 
-    margin: 0 auto;
-    padding: 0 20px;
+    margin: 0 auto; 
     height: 80px; 
     display: flex; 
     justify-content: space-between;
@@ -43,11 +42,13 @@
   &_left {
     display: flex;
     align-items: center;
+    margin-left: 20px;
   }
   &_right {
     display: flex;
     align-items: center;
     gap: 30px;
+    margin-right: 20px;
   }
   &_lang {
     button {

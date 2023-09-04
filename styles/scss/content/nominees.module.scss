@@ -1,0 +1,119 @@
+.nominees {
+  &_wrap {
+    padding: 0 20px;
+  }
+  &_ul {
+    display: flex;
+    margin-top: 80px;
+    button {
+      background-color: transparent;
+      color: $lightgray;
+      border: none;
+      font-size: $fs20;
+      font-family: $noto-medium;
+    } 
+    li { 
+      padding: 5px 20px;
+      box-sizing: border-box;
+      margin-right: 20px;
+      border: 1px solid transparent;
+    }
+  }
+  &_content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    height: 1200px;
+    &_left {
+      width: 410px;
+      // height: 555px;
+      background: linear-gradient(333deg, #ff009d 2%, #ff6363 50%, #fb0089 176%);
+      text-align: center;
+      padding-top: 20px;
+      border: 1px solid $darkgray;
+      img {
+        width: 360px;
+      }
+      p {
+        padding: 0 20px;
+        text-align: left;
+        &:nth-of-type(1) {
+          font-size: $fs36;
+          margin-top: 20px;
+          margin-bottom: 30px;
+        }
+        &:not(:nth-of-type(1)){ 
+          font-size: $fs22;
+        }
+      }
+      &_record {
+        background: linear-gradient(333deg, #00336d 24%, #214d7f 42%, #2067ff 73%) !important;
+      }
+    }
+    &_right {
+      overflow: auto;
+      width: 1225px;
+      display: flex;
+      flex-wrap: wrap;
+      &::-webkit-scrollbar {
+        width: 10px;
+      }
+      &::-webkit-scrollbar-thumb {
+        width: 8px;
+        background-color: rgba(43, 43, 43, 0.631);
+      } 
+      li {
+        width: calc( (100% - 128px)/3 ); 
+        padding: 20px 20px 30px 20px;
+        border: 1px solid $darkgray;
+        img {
+          width: 360px;
+        }
+        p {
+          // padding: 0 20px;
+          &:nth-of-type(1) {
+            font-size: $fs22;
+            color: $pink;
+            margin: 20px 0 20px 0;
+          }
+          &:not(:nth-of-type(1)) {
+            font-size: $fs20;
+          }
+          &:nth-of-type(3) {
+            color: $lightgray;
+          }
+        }
+      }
+      &_record {
+        li {
+          p {
+            &:nth-of-type(1) {
+              color: $blue;
+            }
+          }
+        }
+      }
+      &_etc {
+        width: 100%;
+        li{
+          width: calc((100% - 170px) / 4); 
+          p {
+            &:nth-of-type(1) {
+              color: $yellow;
+            }
+          }
+          img {
+            width: 370px;
+          }
+        }
+      }
+    }
+  }
+}
+.active {
+  border: 1px solid $white !important;
+  border-radius: 25px;
+  button {
+    color: $white !important;
+  }
+}

@@ -2,12 +2,13 @@
   &_wrap {
     width: $width;
     margin: 0 auto;
-    padding: 40px 20px;    
+    padding: 40px 0;    
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row-reverse;
     h1 {
+      margin-right: 20px;
       a { 
           font-family: $popins-medium;
           font-size: $fs44;
@@ -52,6 +53,7 @@
   &_nav {
     width: 580px;
     &_ul {
+      margin-left: 20px;
       display: flex;  
       justify-content: space-between; 
       li {

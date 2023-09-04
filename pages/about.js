@@ -5,10 +5,10 @@ export default function about() {
   return (
     <div>  
       <div className="l-content">
-        <Title name="About Awards" /> 
+        <Title name="ABOUT AWARDS" /> 
       </div>
       <div className={abt.about_img}>
-        <img src="/images/content/about.png" alt='about' />
+        <img src="/images/content/about/about.png" alt='about' />
       </div>
       <div className="l-content">
         <div className={abt.about_text}>
@@ -26,6 +26,11 @@ export default function about() {
         <div className={abt.about_intro}>
           <p>제36회 골든디스크어워즈</p>
           <table className={abt.about_table_1}>
+          <colgroup> 
+            <col width="10%" /> 
+            <col width="8%" /> 
+            <col width="85%" /> 
+          </colgroup>
             <tbody>
               <tr>
                 <td rowSpan="3" className={abt.about_table_t}>
@@ -40,20 +45,59 @@ export default function about() {
               </tr>
               <tr>
                 <td colSpan="2">
-                  <img src="/images/content/map.png" alt="" />
+                  <img src="/images/content/about/map.png" alt="" />
                 </td>
               </tr>
             </tbody>
           </table>
-          <table className={abt.about_table_2}>
+          <table className={abt.about_table_2}> 
+            <colgroup> 
+              <col width="15%" /> 
+              <col width="8%" /> 
+              <col width="80%" /> 
+            </colgroup>
             <tbody>
               <tr>
                 <td rowSpan="3" className={abt.about_table_t}>SPONSOR</td>
-                <td>일시</td>
-                <td>2023년 1월 7일 (토) 오후 8시 (KST 8:00 PM)</td>
+                <td>방송</td>
+                <td>
+                  <div>
+                    <img src="/images/content/jtbc.png" alt="jtbc" />
+                    <img src="/images/content/jtbc2.png" alt="jtbc2" />
+                    <img src="/images/content/jtbc4.png" alt="jtbc4" />
+                  </div> 
+                </td>
+              </tr>
+              <tr> 
+                <td>중계</td>
+                <td>
+                  <div>
+                    <img src="/images/content/tiktok_3.png" alt="tiktok"/>
+                    <img src="/images/content/tbc_channel.png" alt="tbc_channel"/>
+                    <img src="/images/content/paravi.png" alt="paravi"/>
+                  </div>
+                </td>
+              </tr>
+              <tr> 
+                <td>협찬</td>
+                <td>
+                  <div>
+                    <img src="/images/content/tiktok_3.png" alt="tiktok"/>
+                    <img src="/images/content/baoji.png" alt="baoji"/>
+                    <img src="/images/content/hyundai.png" alt="hyundai"/>
+                    <img src="/images/content/ace.png" alt="ace"/>
+                  </div>
+                </td>
               </tr>
             </tbody>
           </table>
+        </div>
+        <div className={abt.about_division}>
+          <p>Division</p>
+          <div className={abt.about_division_div}>
+            한 해 동안 발매된 음반 판매량과 디지털음원 이용량에 가장 중요한 비중을 두고<br/>
+            업계 전문가의 공정한 평가로 수상자를 결정함으로써 그 어떤 시상식보다 아티스트와 대중으로부터 큰 신뢰와 권위를 얻고 있는 시상식으로 평가받고 있습니다.
+          </div>
         </div>
       </div>
     </div>
