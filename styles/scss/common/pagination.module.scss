@@ -1,0 +1,21 @@
+.pagination{
+  &_wrap {
+    margin: 20px auto;
+    button { 
+      cursor: pointer;
+      color: $white;
+      font-size: $fs20; 
+      border-radius: 5px;
+      margin: 0 5px;
+      border: none;
+      background-color: $darkgray;
+      padding: 5px;
+      width: 40px;
+      height: 40px;
+    }
+  }
+  &_active {
+    background-color: $lightgray !important; 
+    color: $black !important;
+  }
+}

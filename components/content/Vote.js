@@ -1,10 +1,13 @@
 import vote from '@/styles/scss/content/vote.module.scss'
 import Button from '@/components/common/Button'
 
-export default function Vote() {
+export default function Vote({ show, align }) {
   return (
-    <div className={vote.vote_wrap}>
-      <Button name="VOTE" more="false" align="center"/>
+    <div className={`${vote.vote_wrap} ${vote[`vote_${align}`]}`}>
+      {
+        !show &&
+        <Button name="VOTE" more="false" align="center" />
+      }
       <div className={vote.vote_title}>
         12월 20일(화) 오전 11시(KST)부터
         <p className={vote.vote_img}>

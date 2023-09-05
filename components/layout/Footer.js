@@ -34,10 +34,8 @@ export default function Footer() {
                 <div className={ footer.footer_nav }>
                     <ul className={ footer.footer_nav_ul }>
                         {FNavList.map((item) => ( 
-                            <li key={item.id}>
-                            <Link href={item.link}>
-                                <span>{item.title} </span>
-                            </Link> 
+                            <li key={item.id}> 
+                                <span>{item.title} </span> 
                             <ul className={ footer.footer_nav_ul_sub }>
                                 {item.subtitle.map((item2) => (
                                 <li  key={item2.id}>

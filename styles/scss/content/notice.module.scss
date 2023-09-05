@@ -1,0 +1,31 @@
+.notice {
+  &_wrap {
+    p {
+      padding: 0 20px;
+      margin-top: 20px;
+      font-size: $fs22;
+    }
+  }
+  &_table {    
+    margin: 100px auto 20px auto;
+    width: 100%; 
+    th {
+      padding: 20px 0;
+      border: 1px solid $darkgray;
+    }
+    tr {
+      font-size: $fs16;
+      td { 
+        border: 1px solid $darkgray;
+        padding: 20px;
+        color: $lightgray;
+        &:nth-child(1) {
+          text-align: center;
+        }
+        &:nth-child(3) {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

@@ -1,19 +1,15 @@
 export const NomineesNav = [
   {
-    title: '전체',
-    all: 'all'
+    title: '전체' 
   },
   {
-    title: '디지털음원부문',
-    category: 'soundtrack'
+    title: '디지털음원부문' 
   },
   {
-    title: '음반부문',
-    category: 'record'
+    title: '음반부문' 
   },
   {
-    title: '기타',
-    category: 'etc'
+    title: '기타' 
   }
 ]
 
