@@ -24,7 +24,7 @@
           height: 25px;
         }
         &:hover {
-          background-color: #fb0089;
+          background-color: $gold;
         }
       }
     }
@@ -40,7 +40,7 @@
     }
     font-size: $fs85;
     font-family: $popins-medium;
-    background: linear-gradient( to right, #ff009d 2%, #ff6363 60%, #fb0089 );
+    background: linear-gradient( to right,  #e73d00 2%, #fd9c6f 60%, #e96b35);
     background-clip: text; 
 	  -webkit-background-clip: text; 
 	  color: transparent;

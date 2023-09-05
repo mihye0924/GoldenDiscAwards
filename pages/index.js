@@ -6,7 +6,7 @@ import Maquee from '@/components/content/Maquee'
 
 export default function Home() {  
   return ( 
-    <div className="l-content">  
+    <div>  
       <Main/>
       <Winner />
       <Video />

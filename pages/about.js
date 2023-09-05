@@ -92,13 +92,13 @@ export default function aboutPage() {
             </tbody>
           </table>
         </div>
-        <div className={about.about_division}>
+        {/* <div className={about.about_division}>
           <p>Division</p>
           <div className={about.about_division_div}>
             한 해 동안 발매된 음반 판매량과 디지털음원 이용량에 가장 중요한 비중을 두고<br/>
             업계 전문가의 공정한 평가로 수상자를 결정함으로써 그 어떤 시상식보다 아티스트와 대중으로부터 큰 신뢰와 권위를 얻고 있는 시상식으로 평가받고 있습니다.
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   )

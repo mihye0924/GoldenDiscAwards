@@ -4,16 +4,18 @@ import Marquee from "react-fast-marquee";
 
 export default function Maquee() {
   return (
-    <Marquee speed="50" >  
-      <div className={maq.maq_wrap}>
-        {
-          maquee.map((item) => (
-            <p key={item.id}>
-              <img src={`${ item.img }.png`} alt={ item.alt } />
-            </p>
-          ))
-        }
-      </div>
-    </Marquee>
+    <div className="l-content">
+      <Marquee speed="50">  
+        <div className={maq.maq_wrap}>
+          {
+            maquee.map((item) => (
+              <p key={item.id}>
+                <img src={`${ item.img }.png`} alt={ item.alt } />
+              </p>
+            ))
+          }
+        </div>
+      </Marquee>
+    </div>
   )
 }

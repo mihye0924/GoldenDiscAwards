@@ -27,7 +27,7 @@
     &_left {
       width: 410px;
       // height: 555px;
-      background: linear-gradient(333deg, #ff009d 2%, #ff6363 50%, #fb0089 176%);
+      background: $pink;
       text-align: center;
       padding-top: 20px;
       border: 1px solid $darkgray;
@@ -47,7 +47,7 @@
         }
       }
       &_record {
-        background: linear-gradient(333deg, #00336d 24%, #214d7f 42%, #2067ff 73%) !important;
+        background: #004a9f;
       }
     }
     &_right {
@@ -99,7 +99,7 @@
           width: calc((100% - 170px) / 4); 
           p {
             &:nth-of-type(1) {
-              color: $yellow;
+              color: $gold;
             }
           }
           img {
