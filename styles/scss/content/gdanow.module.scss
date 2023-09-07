@@ -28,7 +28,8 @@
       li{
         padding: 20px;
         border: 1px solid $darkgray;
-        width: calc((100% - 128px)/3);
+        width: calc(100% /3);
+        box-sizing: border-box;
         a{
           display: block;
         }

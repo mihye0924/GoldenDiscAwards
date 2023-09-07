@@ -3,7 +3,7 @@ import Button from '@/components/common/Button'
 
 export default function Vote({ show, align }) {
   return (
-    <div className="l-content">
+    <section className="l-content">
       <div className={`${vote.vote_wrap} ${vote[`vote_${align}`]}`}>
         {
           !show &&
@@ -50,6 +50,6 @@ export default function Vote({ show, align }) {
           </tbody>
         </table>
       </div> 
-  </div>
+  </section>
   )
 }

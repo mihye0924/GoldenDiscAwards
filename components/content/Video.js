@@ -2,7 +2,7 @@ import video from '@/styles/scss/content/video.module.scss'
 import Button from '@/components/common/Button'
 export default function Video() {
   return (
-    <div className="l-content">
+    <section className="l-content">
       <div className={ video.video_wrap } >
         <Button name="VIDEOS" />
         <div className={video.video_box_wrap}>
@@ -23,6 +23,6 @@ export default function Video() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }

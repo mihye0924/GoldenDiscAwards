@@ -22,14 +22,14 @@ export default function Header() {
         }
       }; 
     return (
-        <div className="l-header">
-            <div id='scroll' className={`${header.header_wrap} ${header[active]}`}>
+        <header className="l-header">
+            <div id='scroll' className={`${header.header_wrap} ${active && header[active]}`}>
                 <div className={header.header_inner}>
                     <div className={header.header_left}>
                         <div className={header.header_logo}> 
                             <Link href="/">GOLDENDISCAWARDS</Link>
                         </div>
-                        <div>
+                        <na>
                             <ul className={header.header_gnb}>
                                 {gnbList.map((item) => (
                                     <li key={item.id}>
@@ -39,7 +39,7 @@ export default function Header() {
                                     </li>
                                 ))}
                             </ul>
-                        </div>
+                        </na>
                     </div>
                     <div className={header.header_right}>
                         <div className={header.header_lang}>
@@ -53,6 +53,6 @@ export default function Header() {
                     </div>
                 </div>
             </div>
-        </div>
+        </header>
     )
 }

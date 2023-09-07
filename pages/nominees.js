@@ -13,7 +13,7 @@ export default function NomineesPage() {
       <div>
         <Title name="NOMINESS" />
       </div>
-      <div className={nominees.nominees_wrap}>
+      <nav className={nominees.nominees_wrap}>
         <ul className={nominees.nominees_ul}>
           {NomineesNav.map((item, id) => (
             <li key={id}
@@ -130,7 +130,7 @@ export default function NomineesPage() {
             </ul>
           </div>
         }
-      </div>
+      </nav>
     </div>
   );
 }

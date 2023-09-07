@@ -4,7 +4,7 @@ import Marquee from "react-fast-marquee";
 
 export default function Maquee() {
   return (
-    <div className="l-content">
+    <section className="l-content">
       <Marquee speed="50">  
         <div className={maq.maq_wrap}>
           {
@@ -16,6 +16,6 @@ export default function Maquee() {
           }
         </div>
       </Marquee>
-    </div>
+    </section>
   )
 }

@@ -1,0 +1,40 @@
+.history {
+  &_wrap {
+    padding: 0 20px;
+  } 
+  &_ul {
+    display: flex;
+    margin-top: 80px;
+    button {
+      background-color: transparent;
+      color: $lightgray;
+      border: none;
+      font-size: $fs20;
+      font-family: $noto-medium;
+    } 
+    li { 
+      padding: 5px 20px;
+      box-sizing: border-box;
+      margin-right: 20px;
+      border: 1px solid transparent;
+    }
+  }
+  &_content {
+    margin-top: 60px;
+    h3 {
+      font-size: $fs30;
+      margin-bottom: 20px;
+    }
+    table {
+      width: 100%;
+      text-align: center;
+    } 
+  }
+}
+.active {
+  border: 1px solid $white !important;
+  border-radius: 25px;
+  button {
+    color: $white !important;
+  }
+}

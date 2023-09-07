@@ -1,7 +1,7 @@
 import main from '@/styles/scss/content/main.module.scss'
 export default function Main() {
   return ( 
-  <div>
+  <section>
     <div className={main.main_bg }> 
     <div className={`l-content ${main.main_wrap}` }>
       <div className={main.main_title_t}>
@@ -19,6 +19,6 @@ export default function Main() {
       </div>
     </div>
     </div>
-  </div>
+  </section>
   )
 }

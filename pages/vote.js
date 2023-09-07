@@ -12,7 +12,9 @@ export default function VotePage() {
         <div>
           <Title name="VOTE" />
         </div>
-        <Vote show="false" align="left" />
+        <div className={vote.vote2_wrap}>
+          <Vote show="false" align="left" />
+        </div>
       </div>
     </div>
   )

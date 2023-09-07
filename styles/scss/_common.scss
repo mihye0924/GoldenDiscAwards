@@ -31,8 +31,11 @@
     justify-content: space-between;
 }
 
-// text
-
-// .left { text-align: left; }
-// .right { text-align: right; }
-// .center { text-align: center; } 
+.table {
+    border-collapse : collapse;
+    & { 
+        tr, td{
+            border: 1px solid $darkgray;
+        }
+    }
+}

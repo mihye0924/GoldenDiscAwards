@@ -1,6 +1,6 @@
 .vote {
   &_wrap {
-    margin: 100px 20px;
+    margin: 0 20px 100px 0;
   }
   &_title {
     margin-top: 80px;
@@ -34,6 +34,7 @@
     border-bottom: 1px solid $darkgray;
   }
   &_table { 
+    
     width: 800px;
     margin: 0 auto; 
     border-spacing: 50px 40px;
@@ -85,12 +86,16 @@
         margin: 50px 0;
       }
       &_table {
-        margin: 0 
+        margin: 0;
+        border-spacing: 0 40px;
       }
     }
   }
 } 
 .vote2 {
+  &_wrap {
+    padding: 0 20px;
+  }
   &_img {
     position: absolute;
     right: 0; 

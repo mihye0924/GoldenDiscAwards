@@ -18,20 +18,25 @@
       }
     }
     &_t {  
-      p {
-        &:nth-of-type(1),
-        &:nth-of-type(2) {
+      h3 {  
+        font-size: $fs60;
+        font-weight: $fw100;
+      }
+      p { 
+        &:nth-of-type(1) {
           font-size: $fs60; 
+          font-weight: $fw100;
         }
-        &:nth-of-type(3) {
+        &:nth-of-type(2) {
+          font-weight: $fw100;
           margin: 64px 0 0px 0;
           font-size: 28px;
           border: 1px solid #c5c5c5;
           padding: 15px 0px;
           text-align: center;
-          box-sizing: border-box;
+          box-sizing: border-box; 
         }
-      }
+      }  
     } 
     &_img {  
       position: relative; 

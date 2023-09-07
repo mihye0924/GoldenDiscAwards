@@ -11,7 +11,7 @@ export const FNavList = [
       {
         id: 2,
         label: '시상부문',
-        link: '/'
+        link: '/categories'
       }
     ]
   },

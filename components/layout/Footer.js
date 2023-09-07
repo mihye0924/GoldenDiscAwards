@@ -4,7 +4,7 @@ import { FNavList } from '@/pages/api/FNav'
 
 export default function Footer() {
     return(
-        <div className="l-footer"> 
+        <footer className="l-footer"> 
             <div className={footer.footer_sns_wrap}>
                 <ul className={footer.footer_sns}>
                     <li>
@@ -50,6 +50,6 @@ export default function Footer() {
                     </ul>
                 </div>
             </div> 
-        </div>
+        </footer>
     )
 }

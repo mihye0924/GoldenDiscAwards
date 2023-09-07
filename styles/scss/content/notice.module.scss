@@ -1,7 +1,7 @@
 .notice {
   &_wrap {
+    padding: 0 20px;
     p {
-      padding: 0 20px;
       margin-top: 20px;
       font-size: $fs22;
     }
@@ -15,8 +15,7 @@
     }
     tr {
       font-size: $fs16;
-      td { 
-        border: 1px solid $darkgray;
+      td {  
         padding: 20px;
         color: $lightgray;
         &:nth-child(1) {
