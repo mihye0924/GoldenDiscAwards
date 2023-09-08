@@ -33,7 +33,7 @@ export const FNavList = [
       {
         id: 1,
         label: '역대수상',
-        link: '/'
+        link: '/history'
       }
     ]
   },

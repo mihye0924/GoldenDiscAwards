@@ -9,7 +9,6 @@
       transition: all 0.5s linear; 
     }
   } 
-   
   &_gnb { 
     display: flex;
     margin-left: 100px;
@@ -54,11 +53,14 @@
     button {
       cursor: pointer;
       background-color: transparent;
-      border: none;
+      border: 0;
       color: $white;
       &:first-child {
         margin-right: 30px;
-      }
+      } 
+    }
+    &_active {
+      font-weight: $fw900;
     }
   }
   &_menu {
@@ -92,6 +94,8 @@
         bottom: -10px;
       }
     }
+    background-color: transparent; 
+    border: none;
   }
 }
  

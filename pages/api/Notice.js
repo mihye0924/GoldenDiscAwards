@@ -3,6 +3,18 @@ export const noticeList = [
     id: 1, 
     link: '',
     title: "'37회 골든디스크 어워즈 with 틱톡'일본 생중계 안내",
+    subTitle: "'37회 골든디스크 어워즈 with 틱톡'일본 생중계 안내",
+    content: `
+      TBS채널1과 Paravi에서 일본 팬들을 위한 한일 동시 생중계를 제공합니다.
+      
+      - 방송 일시 : 2023년 1월 7일(토) 20:00
+      - 채널/플랫폼 : TBS채널1, Paravi
+      
+      자세한 사항은 TBS채널1(https://www.tbs.co.jp/tbs-ch/item/o2755/ )과
+      Paravi(https://www.paravi.jp/title/104827 )의
+      공식 홈페이지 를 확인 부탁드립니다.
+      
+      감사합니다.`,
     date: '2023.01.06'
   },
   {
@@ -123,6 +135,36 @@ export const noticeList = [
     id: 21, 
     link: '',
     title: "테스트 제목입니다.",
+    date: '2023.00.00'
+  },
+  {
+    id: 22, 
+    link: '',
+    title: "테스트 제목입니다.",
+    date: '2023.00.00'
+  },
+  {
+    id: 23, 
+    link: '',
+    title: "테스트 제목입니다.",
+    date: '2023.00.00'
+  },
+  {
+    id: 24, 
+    link: '',
+    title: "테스트 제목입니다.",
+    date: '2023.00.00'
+  },
+  {
+    id: 25, 
+    link: '',
+    title: "테스트 제목입니다.",
+    date: '2023.00.00'
+  },
+  {
+    id: 26, 
+    link: '',
+    title: "테스트 마지막글입니다.",
     date: '2023.00.00'
   },
 ]

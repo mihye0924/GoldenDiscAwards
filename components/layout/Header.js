@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 
 export default function Header() {
     const [active, setActive] = useState('')
+    const [lang, setLang] = useState(true)
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
         return () => {
@@ -20,7 +21,11 @@ export default function Header() {
         } else {
             setActive('')
         }
-      }; 
+    }; 
+    // 메뉴이벤트
+    const handlerMenu = () => {
+        
+    }
     return (
         <header className="l-header">
             <div id='scroll' className={`${header.header_wrap} ${active && header[active]}`}>
@@ -42,14 +47,23 @@ export default function Header() {
                         </na>
                     </div>
                     <div className={header.header_right}>
-                        <div className={header.header_lang}>
-                            <button>KO</button>
-                            <button>EN</button>
+                        <div className={header.header_lang} >
+                            <button
+                                className={`${lang ? header[`${'header_lang_active'}`] : ''}`}
+                                onClick={() => { setLang(true) }}
+                            >
+                                KO
+                            </button>
+                            <button
+                                 className={`${!lang ? header[`${'header_lang_active'}`] : ''}`}
+                                onClick={() => { setLang(false) }}
+                            >
+                                EN
+                            </button>
                         </div>
-                        <div className={header.header_menu}>
+                        {/* <button className={header.header_menu} onClick={handlerMenu}>
                             <span />
-                        </div>
-                        {/* <img src="/images/common/hammenu_btn.png" /> */}
+                        </button>  */}
                     </div>
                 </div>
             </div>

@@ -6,7 +6,9 @@ import Link from "next/link";
 
 export default function GdaNowPage() {
   const [active, setActive] = useState('2023');
-  const [value, setValue] = useState(15)
+  const [value, setValue] = useState(15) 
+  const limit = 6 
+
   const list = 
     {
       '2023': twentythree,
@@ -18,10 +20,9 @@ export default function GdaNowPage() {
     setActive(e.target.innerText) 
     setValue(15)
   }; 
-  const handleMoreBtn = (e) => {   
-    const index = 6 
-    if (value < twentythree.length) {
-        setValue(value + index)  
+  const handleMoreBtn = () => { 
+    if (value <= list[active].length) {
+      setValue(value + limit)  
     } 
   } 
   return (
@@ -62,9 +63,12 @@ export default function GdaNowPage() {
             </ul>
           </div>
         }
-        <button className={gdanow.gdanow_button} onClick={handleMoreBtn}>MORE
-          <span>+</span>
-        </button>
+        {
+        value + limit <= list[active].length &&
+          <button className={gdanow.gdanow_button} onClick={handleMoreBtn}>MORE
+            <span>+</span>
+          </button>
+        }
       </nav>
     </div>
   )

@@ -17,12 +17,12 @@ export default function HistoryFive() {
 					</thead>
 					<tbody>
 					<tr>
-						<td scope="row">디지털음원 대상</td>
+						<th scope="row">디지털음원 대상</th>
 						<td>방탄소년단</td>
 						<td>작은 것들을 위한 시</td>
 					</tr>
 					<tr>
-						<td scope="row" rowSpan="10">디지털음원 본상</td>
+						<th scope="row" rowSpan="10">디지털음원 본상</th>
 						<td>방탄소년단</td>
 						<td>작은 것들을 위한 시</td>
 					</tr>
@@ -64,32 +64,32 @@ export default function HistoryFive() {
 					</tr>
 
 					<tr>
-						<td scope="row">제작자상</td>
+						<th scope="row">제작자상</th>
 						<td>방시혁</td>
 						<td/>
 					</tr>
 					<tr>
-						<td scope="row">베스트 R&B 힙합</td>
+						<th scope="row">베스트 R&B 힙합</th>
 						<td>지코</td>
 						<td/>
 					</tr>
 					<tr>
-						<td scope="row">베스트 트로트</td>
+						<th scope="row">베스트 트로트</th>
 						<td>송가인</td>
 						<td/>
 					</tr>
 					<tr>
-						<td scope="row">베스트 솔로 아티스트</td>
+						<th scope="row">베스트 솔로 아티스트</th>
 						<td>화사</td>
 						<td/>
 					</tr>
 					<tr>
-						<td scope="row">베스트 그룹</td>
+						<th scope="row">베스트 그룹</th>
 						<td>마마무</td>
 						<td/>
 					</tr>
 					<tr>
-						<td scope="row" rowSpan="2">신인상</td>
+						<th scope="row" rowSpan="2">신인상</th>
 						<td>ITZY</td>
 						<td/>
 					</tr>
@@ -98,7 +98,7 @@ export default function HistoryFive() {
 						<td/>
 					</tr>
 					<tr>
-						<td scope="row" rowSpan="3">넥스트 제너레이션</td>
+						<th scope="row" rowSpan="3">넥스트 제너레이션</th>
 						<td>김재환</td>
 						<td/>
 					</tr>
@@ -125,12 +125,12 @@ export default function HistoryFive() {
 					</thead>
 					<tbody>
 					<tr>
-						<td scope="row">음반 대상</td>
+						<th scope="row">음반 대상</th>
 						<td>방탄소년단</td>
 						<td>MAP OF tdE SOUL : PERSONA</td>
 					</tr>
 					<tr>
-						<td scope="row" rowSpan="10">음반 본상</td>
+						<th scope="row" rowSpan="10">음반 본상</th>
 						<td>뉴이스트</td>
 						<td>tde 6td Mini Album &rsquo;Happily Ever After&rsquo;</td>
 					</tr>
@@ -172,17 +172,17 @@ export default function HistoryFive() {
 					</tr>
 
 					<tr>
-						<td scope="row">틱톡 골든디스크 인기상</td>
+						<th scope="row">틱톡 골든디스크 인기상</th>
 						<td>방탄소년단</td>
 						<td/>
 					</tr>
 					<tr>
-						<td scope="row">왕이윈뮤직 팬스 초이스 케이팝 스타상</td>
+						<th scope="row">왕이윈뮤직 팬스 초이스 케이팝 스타상</th>
 						<td>방탄소년단</td>
 						<td/>
 					</tr>
 					<tr>
-						<td scope="row" rowSpan="2"/>
+						<th scope="row" rowSpan="2"/>
 						<td>뉴이스트</td>
 						<td/>
 					</tr>
@@ -192,17 +192,17 @@ export default function HistoryFive() {
 					</tr>
 
 					<tr>
-						<td scope="row">베스트 퍼포먼스(남)</td>
+						<th scope="row">베스트 퍼포먼스(남)</th>
 						<td>아스트로</td>
 						<td/>
 					</tr>
 					<tr>
-						<td scope="row">베스트 퍼포먼스(여)</td>
+						<th scope="row">베스트 퍼포먼스(여)</th>
 						<td>(여자)아이들</td>
 						<td/>
 					</tr>
 					<tr>
-						<td scope="row">베스트 O.S.T.</td>
+						<th scope="row">베스트 O.S.T.</th>
 						<td>거미</td>
 						<td/>
 					</tr>
@@ -225,12 +225,12 @@ export default function HistoryFive() {
 					</thead>
 				<tbody>
 				<tr>
-					<td scope="row">디지털음원 대상</td>
+					<th scope="row">디지털음원 대상</th>
 					<td>아이유</td>
 					<td>Blueming</td>
 				</tr>
 				<tr>
-					<td scope="row" rowSpan="10">디지털음원 본상</td>
+					<th scope="row" rowSpan="10">디지털음원 본상</th>
 					<td>BLACKPINK</td>
 					<td>How You Like tdat</td>
 				</tr>
@@ -272,42 +272,42 @@ export default function HistoryFive() {
 				</tr>
 
 				<tr>
-					<td scope="row">베스트 발라드</td>
+					<th scope="row">베스트 발라드</th>
 					<td>이승기</td>
 					<td/>
 				</tr>
 				<tr>
-					<td scope="row">베스트 트로트</td>
+					<th scope="row">베스트 트로트</th>
 					<td>임영웅</td>
 					<td/>
 				</tr>
 				<tr>
-					<td scope="row">베스트 R&B 힙합</td>
+					<th scope="row">베스트 R&B 힙합</th>
 					<td>창모</td>
 					<td/>
 				</tr>
 				<tr>
-					<td scope="row">베스트 솔로 아티스트</td>
+					<th scope="row">베스트 솔로 아티스트</th>
 					<td>제시</td>
 					<td/>
 				</tr>
 				<tr>
-					<td scope="row">베스트 그룹</td>
+					<th scope="row">베스트 그룹</th>
 					<td>몬스타엑스</td>
 					<td/>
 				</tr>
 				<tr>
-					<td scope="row">Trend of tde year</td>
+					<th scope="row">Trend of tde year</th>
 					<td>지코</td>
 					<td/>
 				</tr>
 				<tr>
-					<td scope="row">골든 초이스</td>
+					<th scope="row">골든 초이스</th>
 					<td>뉴이스트</td>
 					<td/>
 				</tr>
 				<tr>
-					<td scope="row" rowSpan="2">넥스트 제너레이션</td>
+					<th scope="row" rowSpan="2">넥스트 제너레이션</th>
 					<td>더보이즈</td>
 					<td/>
 				</tr>
@@ -330,12 +330,12 @@ export default function HistoryFive() {
 					</thead>
 				<tbody>
 				<tr>
-					<td scope="row">음반 대상</td>
+					<th scope="row">음반 대상</th>
 					<td>방탄소년단</td>
 					<td>MAP OF tdE SOUL : 7</td>
 				</tr>
 				<tr>
-					<td scope="row" rowSpan="10">음반 본상</td>
+					<th scope="row" rowSpan="10">음반 본상</th>
 					<td>BLACKPINK</td>
 					<td>tdE ALBUM</td>
 				</tr>
@@ -377,37 +377,37 @@ export default function HistoryFive() {
 				</tr>
 
 				<tr>
-					<td scope="row">큐라프록스 골든디스크 인기상</td>
+					<th scope="row">큐라프록스 골든디스크 인기상</th>
 					<td>방탄소년단</td>
 					<td/>
 				</tr>
 				<tr>
-					<td scope="row">큐큐뮤직 팬스 초이스 케이팝 스타상</td>
+					<th scope="row">큐큐뮤직 팬스 초이스 케이팝 스타상</th>
 					<td>EXO</td>
 					<td/>
 				</tr>
 				<tr>
-					<td scope="row">코스모폴리탄 아티스트</td>
+					<th scope="row">코스모폴리탄 아티스트</th>
 					<td>NCT 127</td>
 					<td/>
 				</tr>
 				<tr>
-					<td scope="row">베스트 퍼포먼스(남)</td>
+					<th scope="row">베스트 퍼포먼스(남)</th>
 					<td>스트레이키즈</td>
 					<td/>
 				</tr>
 				<tr>
-					<td scope="row">베스트 퍼포먼스(여)</td>
+					<th scope="row">베스트 퍼포먼스(여)</th>
 					<td>(여자)아이들</td>
 					<td/>
 				</tr>
 				<tr>
-					<td scope="row">베스트 O.S.T.</td>
+					<th scope="row">베스트 O.S.T.</th>
 					<td>조정석</td>
 					<td/>
 				</tr>
 				<tr>
-					<td scope="row" rowSpan="3">신인상</td>
+					<th scope="row" rowSpan="3">신인상</th>
 					<td>ENHYPEN</td>
 					<td/>
 				</tr>
@@ -438,14 +438,14 @@ export default function HistoryFive() {
 					</thead>
 					<tbody>
 						<tr>
-							<td scope="row">디지털음원 대상</td>
+							<th scope="row">디지털음원 대상</th>
 							<td>아이유</td>
 							<td>Celebrity</td>
 						</tr>
 						<tr>
-							<td scope="row" rowSpan="8">
+							<th scope="row" rowSpan="8">
 								디지털음원 본상
-							</td>
+							</th>
 							<td>aespa</td>
 							<td>Next Level</td>
 						</tr>
@@ -479,9 +479,9 @@ export default function HistoryFive() {
 						</tr>
 
 						<tr>
-							<td scope="row" rowSpan={2}>
+							<th scope="row" rowSpan={2}>
 								신인상
-							</td>
+							</th>
 							<td>aespa</td>
 							<td />
 						</tr>
@@ -490,19 +490,19 @@ export default function HistoryFive() {
 							<td />
 						</tr>
 						<tr>
-							<td scope="row">베스트 그룹</td>
+							<th scope="row">베스트 그룹</th>
 							<td>브레이브걸스</td>
 							<td />
 						</tr>
 						<tr>
-							<td scope="row">베스트 솔로 아티스트</td>
+							<th scope="row">베스트 솔로 아티스트</th>
 							<td>임영웅</td>
 							<td />
 						</tr>
 						<tr>
-							<td scope="row" rowSpan={2}>
+							<th scope="row" rowSpan={2}>
 								베스트 퍼포먼스
-							</td>
+							</th>
 							<td>더보이즈</td>
 							<td />
 						</tr>
@@ -525,14 +525,14 @@ export default function HistoryFive() {
 					</thead>
 				<tbody>
 					<tr>
-						<td scope="row">음반 대상</td>
+						<th scope="row">음반 대상</th>
 						<td>방탄소년단</td>
 						<td>BE</td>
 					</tr>
 					<tr>
-						<td scope="row" rowSpan="8">
+						<th scope="row" rowSpan="8">
 							음반 본상
-						</td>
+						</th>
 						<td>ENHYPEN</td>
 						<td>DIMENSION : DILEMMA</td>
 					</tr>
@@ -566,11 +566,11 @@ export default function HistoryFive() {
 					</tr>
 
 					<tr>
-						<td scope="row" rowSpan={2}>
+						<th scope="row" rowSpan={2}>
 							코스모폴리탄
 							<br />
 							아티스트상
-						</td>
+						</th>
 						<td>세븐틴</td>
 						<td />
 					</tr>
@@ -579,18 +579,18 @@ export default function HistoryFive() {
 						<td></td>
 					</tr>
 					<tr>
-						<td scope="row">
+						<th scope="row">
 							ARTIST OF tdE<br />YEAR
-						</td>
+						</th>
 						<td>aespa</td>
 						<td></td>
 					</tr>
 					<tr>
-						<td scope="row" rowSpan={2}>
+						<th scope="row" rowSpan={2}>
 							seezn 골든디스크
 							<br />
 							인기상
-						</td>
+						</th>
 						<td>방탄소년단</td>
 						<td></td>
 					</tr>

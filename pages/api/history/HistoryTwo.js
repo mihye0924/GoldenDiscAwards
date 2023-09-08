@@ -5,7 +5,8 @@
 			<div className="flex">
 				<table className="table">
 					<thead> 
-						<tr> 
+						<tr>
+							<th/> 
 							<th>아티스트</th>
 							<th>곡명</th>
 						</tr>
@@ -102,24 +103,25 @@
 			<h3>1991년 6회 수상자 리스트</h3>
 			 <table className="table">
 				<thead> 
-					<tr> 
+					<tr>
+						<th/> 
 						<th>아티스트</th>
 						<th>곡명</th>
 					</tr>
 				</thead>
 				<tbody>
 				<tr>
-					<td scope="row"> 대상</td>
+					<th scope="row"> 대상</th>
 					<td> 김현식</td>
 					<td> 내 사랑 내 곁에</td>
 				</tr>
 				<tr>
-					<td scope="row"> 제작자 대상</td>
+					<th scope="row"> 제작자 대상</th>
 					<td> 전갑신 서라벌레코드</td>
 					<td> -</td>
 				</tr>
 				<tr>
-					<td scope="row" rowSpan="2"> SKC 인기 가수상</td>
+					<th scope="row" rowSpan="2"> SKC 인기 가수상</th>
 					<td> 강수지</td>
 					<td> 흩어진 나날들</td>
 				</tr>
@@ -128,7 +130,7 @@
 					<td> 재즈 카페</td>
 				</tr>
 				<tr>
-					<td scope="row" rowSpan="2"> SKC 신인 가수상</td>
+					<th scope="row" rowSpan="2"> SKC 신인 가수상</th>
 					<td> 심신</td>
 					<td> 오직 하나뿐인 그대</td>
 				</tr>
@@ -137,12 +139,12 @@
 					<td> 이별의 그늘</td>
 				</tr>
 				<tr>
-					<td scope="row"> 특별상</td>
+					<th scope="row"> 특별상</th>
 					<td> 임정수 지구레코드사 사장</td>
 					<td> -</td>
 				</tr>
 				<tr>
-					<td scope="row" rowSpan="11"> 골든디스크 본상</td>
+					<th scope="row" rowSpan="11"> 골든디스크 본상</th>
 					<td> 김완선</td>
 					<td> 가장무도회</td>
 				</tr>
@@ -191,24 +193,25 @@
 			<h3>1992년 7회 수상자 리스트</h3>
 			 <table className="table">
 				<thead> 
-						<tr> 
+						<tr>
+							<th/> 
 							<th>아티스트</th>
 							<th>곡명</th>
 						</tr>
 				</thead>
 				<tbody>
 				<tr>
-					<td scope="row"> 대상</td>
+					<th scope="row"> 대상</th>
 					<td> 신승훈</td>
 					<td> 보이지 않는 사랑</td>
 				</tr>
 				<tr>
-					<td scope="row"> 제작자 대상</td>
+					<th scope="row"> 제작자 대상</th>
 					<td> 이성균 ㈜덕윤산업 대표</td>
 					<td> -</td>
 				</tr>
 				<tr>
-					<td scope="row" rowSpan="2"> SKC 인기 가수상</td>
+					<th scope="row" rowSpan="2"> SKC 인기 가수상</th>
 					<td> 이덕진</td>
 					<td> 내가 아는 한 가지</td>
 				</tr>
@@ -217,7 +220,7 @@
 					<td> 흐린 기억 속의 그대</td>
 				</tr>
 				<tr>
-					<td scope="row" rowSpan="2"> SKC 장려상</td>
+					<th scope="row" rowSpan="2"> SKC 장려상</th>
 					<td> 김국환</td>
 					<td> 타타타</td>
 				</tr>
@@ -280,29 +283,30 @@
 			<h3>1993년 8회 수상자 리스트</h3>
 			 <table className="table">
 			<thead> 
-					<tr> 
+					<tr>
+						<th/> 
 						<th>아티스트</th>
 						<th>곡명</th>
 					</tr>
 				</thead>
 				<tbody>
 				<tr>
-					<td scope="row"> 대상</td>
+					<th scope="row"> 대상</th>
 					<td> 신승훈</td>
 					<td> 널 사랑하니까</td>
 				</tr>
 				<tr>
-					<td scope="row"> 제작자 대상</td>
+					<th scope="row"> 제작자 대상</th>
 					<td> 이성균 ㈜덕윤산업 대표</td>
 					<td> -</td>
 				</tr>
 				<tr>
-					<td scope="row"> SKC 인기 가수상</td>
+					<th scope="row"> SKC 인기 가수상</th>
 					<td> 최연제</td>
 					<td> 너의 마음을 내게 준다면</td>
 				</tr>
 				<tr>
-					<td scope="row" rowSpan="2"> SKC 장려상</td>
+					<th scope="row" rowSpan="2"> SKC 장려상</th>
 					<td> 박정운</td>
 					<td> 먼 훗날에</td>
 				</tr>
@@ -311,12 +315,12 @@
 					<td> 흔적</td>
 				</tr>
 				<tr>
-					<td scope="row"> 특별상</td>
+					<th scope="row"> 특별상</th>
 					<td> 신홍균 음반협회 부회장</td>
 					<td> -</td>
 				</tr>
 				<tr>
-					<td scope="row" rowSpan="11"> 골든디스크 본상</td>
+					<th scope="row" rowSpan="11"> 골든디스크 본상</th>
 					<td> 015B</td>
 					<td> 신인류의 사랑</td>
 				</tr>
@@ -365,24 +369,25 @@
 			<h3>1994년 9회 수상자 리스트</h3>
 			 <table className="table">
 				<thead> 
-					<tr> 
+					<tr>
+						<th/> 
 						<th>아티스트</th>
 						<th>곡명</th>
 					</tr>
 				</thead>
 				<tbody>
 				<tr>
-					<td scope="row"> 대상</td>
+					<th scope="row"> 대상</th>
 					<td> 김건모</td>
 					<td> 핑계</td>
 				</tr>
 				<tr>
-					<td scope="row"> 제작자 대상</td>
+					<th scope="row"> 제작자 대상</th>
 					<td> 이성균 ㈜덕윤산업 대표</td>
 					<td>-</td>
 				</tr>
 				<tr>
-					<td scope="row" rowSpan="2"> SKC 인기 가수상</td>
+					<th scope="row" rowSpan="2"> SKC 인기 가수상</th>
 					<td> 듀스</td>
 					<td> 우리는</td>
 				</tr>
@@ -391,22 +396,22 @@
 					<td> 너를 잊을 수 없어</td>
 				</tr>
 				<tr>
-					<td scope="row"> SKC 장려상</td>
+					<th scope="row"> SKC 장려상</th>
 					<td> 김민교</td>
 					<td> 마지막 승부</td>
 				</tr>
 				<tr>
-					<td scope="row"> SKC 신인 가수상</td>
+					<th scope="row"> SKC 신인 가수상</th>
 					<td> 투투</td>
 					<td> 일과 이분의 일</td>
 				</tr>
 				<tr>
-					<td scope="row"> 특별상</td>
+					<th scope="row"> 특별상</th>
 					<td> 길옥윤 작곡가</td>
 					<td> -</td>
 				</tr>
 				<tr>
-					<td scope="row" rowSpan="10"> 골든디스크 본상</td>
+					<th scope="row" rowSpan="10"> 골든디스크 본상</th>
 					<td> 김건모</td>
 					<td> 핑계</td>
 				</tr>
@@ -451,44 +456,45 @@
 			<h3>1995년 10회 수상자 리스트</h3>
 			 <table className="table">
 				<thead> 
-					<tr> 
+					<tr>
+						<th/> 
 						<th>아티스트</th>
 						<th>곡명</th>
 					</tr>
 				</thead>
 				<tbody>
 				<tr>
-					<td scope="row"> 대상</td>
+					<th scope="row"> 대상</th>
 					<td> 김건모</td>
 					<td> 잘못된 만남</td>
 				</tr>
 				<tr>
-					<td scope="row"> 제작자 대상</td>
+					<th scope="row"> 제작자 대상</th>
 					<td> 사맹석 라인음향 대표</td>
 					<td> -</td>
 				</tr>
 				<tr>
-					<td scope="row"> SKC 인기 가수상</td>
+					<th scope="row"> SKC 인기 가수상</th>
 					<td> 서태지와 아이들</td>
 					<td> Come Back Home</td>
 				</tr>
 				<tr>
-					<td scope="row"> SKC 장려상</td>
+					<th scope="row"> SKC 장려상</th>
 					<td> 녹색지대</td>
 					<td> 사랑을 할 거야</td>
 				</tr>
 				<tr>
-					<td scope="row"> SKC 신인 가수상</td>
+					<th scope="row"> SKC 신인 가수상</th>
 					<td> 성진우</td>
 					<td> 포기하지 마</td>
 				</tr>
 				<tr>
-					<td scope="row"> 특별상</td>
+					<th scope="row"> 특별상</th>
 					<td> 이미자</td>
 					<td> -</td>
 				</tr>
 				<tr>
-					<td scope="row" rowSpan="10"> 골든디스크본상</td>
+					<th scope="row" rowSpan="10"> 골든디스크본상</th>
 					<td> R.ef</td>
 					<td> 고요 속의 외침</td>
 				</tr>
@@ -533,29 +539,30 @@
 			<h3>1996년 11회 수상자 리스트</h3>
 			 <table className="table">
 			<thead> 
-					<tr> 
+					<tr>
+						<th/> 
 						<th>아티스트</th>
 						<th>곡명</th>
 					</tr>
 				</thead>
 				<tbody>
 				<tr>
-					<td scope="row"> 대상</td>
+					<th scope="row"> 대상</th>
 					<td> 김건모</td>
 					<td> 스피드</td>
 				</tr>
 				<tr>
-					<td scope="row"> 제작자 대상</td>
+					<th scope="row"> 제작자 대상</th>
 					<td> 박남성 도레미레코드 대표</td>
 					<td> -</td>
 				</tr>
 				<tr>
-					<td scope="row"> SKC 인기 가수상</td>
+					<th scope="row"> SKC 인기 가수상</th>
 					<td> 김종환</td>
 					<td> 존재의 이유</td>
 				</tr>
 				<tr>
-					<td scope="row" rowSpan="2"> SKC 신인 가수상</td>
+					<th scope="row" rowSpan="2"> SKC 신인 가수상</th>
 					<td> H.O.T.</td>
 					<td> 캔디</td>
 				</tr>
@@ -564,12 +571,12 @@
 					<td> 바우와우</td>
 				</tr>
 				<tr>
-					<td scope="row"> 특별상</td>
+					<th scope="row"> 특별상</th>
 					<td> 현인</td>
 					<td> -</td>
 				</tr>
 				<tr>
-					<td scope="row" rowSpan="10"> 골든디스크 본상</td>
+					<th scope="row" rowSpan="10"> 골든디스크 본상</th>
 					<td> 김건모</td>
 					<td> 스피드</td>
 				</tr>
@@ -614,24 +621,25 @@
 			<h3>1997년 12회 수상자 리스트</h3>
 			 <table className="table">
 				<thead> 
-					<tr> 
+					<tr>
+						<th/> 
 						<th>아티스트</th>
 						<th>곡명</th>
 					</tr>
 				</thead>
 				<tbody>
 				<tr>
-					<td scope="row"> 대상</td>
+					<th scope="row"> 대상</th>
 					<td> H.O.T.</td>
 					<td> 행복</td>
 				</tr>
 				<tr>
-					<td scope="row"> 제작자 대상</td>
+					<th scope="row"> 제작자 대상</th>
 					<td> 장용진 SM엔터테인먼트</td>
 					<td> -</td>
 				</tr>
 				<tr>
-					<td scope="row" rowSpan="2"> SKC 인기 가수상</td>
+					<th scope="row" rowSpan="2"> SKC 인기 가수상</th>
 					<td> 디바</td>
 					<td> 그래</td>
 				</tr>
@@ -640,7 +648,7 @@
 					<td> 날개</td>
 				</tr>
 				<tr>
-					<td scope="row" rowSpan="2"> SKC 신인 가수상</td>
+					<th scope="row" rowSpan="2"> SKC 신인 가수상</th>
 					<td> 양파</td>
 					<td> 애송이의 사랑</td>
 				</tr>
@@ -649,12 +657,12 @@
 					<td> 말해줘</td>
 				</tr>
 				<tr>
-					<td scope="row"> 특별상</td>
+					<th scope="row"> 특별상</th>
 					<td> 현숙</td>
 					<td> 요즘 남자 요즘 여자</td>
 				</tr>
 				<tr>
-					<td scope="row" rowSpan="11"> 골든디스크 본상</td>
+					<th scope="row" rowSpan="11"> 골든디스크 본상</th>
 					<td> H.O.T.</td>
 					<td> 행복</td>
 				</tr>
@@ -703,24 +711,25 @@
 			<h3>1998년 13회 수상자 리스트</h3>
 			 <table className="table">
 				<thead> 
-					<tr> 
+					<tr>
+						<th/> 
 						<th>아티스트</th>
 						<th>곡명</th>
 					</tr>
 				</thead>
 				<tbody>
 				<tr>
-					<td scope="row"> 대상</td>
+					<th scope="row"> 대상</th>
 					<td> 김종환</td>
 					<td> 사랑을 위하여</td>
 				</tr>
 				<tr>
-					<td scope="row"> 제작자 대상</td>
+					<th scope="row"> 제작자 대상</th>
 					<td> 손명수 애플레코드사</td>
 					<td> -</td>
 				</tr>
 				<tr>
-					<td scope="row" rowSpan="2"> SKC 인기 가수상</td>
+					<th scope="row" rowSpan="2"> SKC 인기 가수상</th>
 					<td> 쿨</td>
 					<td> 애상</td>
 				</tr>
@@ -729,7 +738,7 @@
 					<td> 비(悲)</td>
 				</tr>
 				<tr>
-					<td scope="row" rowSpan="3"> SKC 신인 가수상</td>
+					<th scope="row" rowSpan="3"> SKC 신인 가수상</th>
 					<td> S.E.S.</td>
 					<td> I&amp;m your girl</td>
 				</tr>
@@ -742,12 +751,12 @@
 					<td> 블루 레인</td>
 				</tr>
 				<tr>
-					<td scope="row"> 특별상</td>
+					<th scope="row"> 특별상</th>
 					<td> 송대관</td>
 					<td> 네 박자</td>
 				</tr>
 				<tr>
-					<td scope="row" rowSpan="11"> 골든디스크 본상</td>
+					<th scope="row" rowSpan="11"> 골든디스크 본상</th>
 					<td> H.O.T.</td>
 					<td> 열맞춰!</td>
 				</tr>
@@ -796,19 +805,20 @@
 			<h3>1999년 14회 수상자 리스트</h3>
 			 <table className="table">
 				<thead> 
-					<tr> 
+					<tr>
+						<th/> 
 						<th>아티스트</th>
 						<th>곡명</th>
 					</tr>
 				</thead>
 				<tbody>
 				<tr>
-					<td scope="row"> 대상</td>
+					<th scope="row"> 대상</th>
 					<td> 조성모</td>
 					<td> 슬픈 영혼식</td>
 				</tr>
 				<tr>
-					<td scope="row" rowSpan="3"> 인기가수상</td>
+					<th scope="row" rowSpan="3"> 인기가수상</th>
 					<td> 김경호</td>
 					<td> 아름답게 사랑하는 날까지</td>
 				</tr>
@@ -821,7 +831,7 @@
 					<td> 돌아와</td>
 				</tr>
 				<tr>
-					<td scope="row" rowSpan="2"> 신인가수상</td>
+					<th scope="row" rowSpan="2"> 신인가수상</th>
 					<td> 원타임</td>
 					<td> 원타임</td>
 				</tr>
@@ -830,12 +840,12 @@
 					<td> 와</td>
 				</tr>
 				<tr>
-					<td scope="row"> 특별상</td>
+					<th scope="row"> 특별상</th>
 					<td> 태진아</td>
 					<td> 외로워 마세요</td>
 				</tr>
 				<tr>
-					<td scope="row" rowSpan="11"> 골든디스크 본상</td>
+					<th scope="row" rowSpan="11"> 골든디스크 본상</th>
 					<td> H.O.T.</td>
 					<td> 아이야!</td>
 				</tr>

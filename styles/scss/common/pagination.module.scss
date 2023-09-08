@@ -1,7 +1,9 @@
 .pagination{
   &_wrap {
     margin: 20px auto;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     button { 
       cursor: pointer;
       color: $white;
@@ -18,5 +20,15 @@
   &_active {
     background-color: $lightgray !important; 
     color: $black !important;
+  }
+  &_left {
+    img {
+      width: 25px;
+    }
+  }
+  &_right {
+    img {
+      width: 25px;
+    }
   }
 }
