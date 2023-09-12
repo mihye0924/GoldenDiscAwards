@@ -3,6 +3,7 @@ import { noticeList } from "../api/Notice"
 import notice from '@/styles/scss/content/notice.module.scss'
 import { useRouter } from "next/router";
 import Link from "next/link";
+import html from 'html-react-parser'
 
 export default function Notice1() { 
   const router = useRouter();
@@ -29,7 +30,11 @@ export default function Notice1() {
                       <td>{item.title}</td>
                     </tr>
                     <tr>
-                        <td colSpan="2" className={`${notice.notice_list_table_content}`}>{item.content}</td>
+                        <td
+                          colSpan="2"
+                          className={`${notice.notice_list_table_content}`}
+                          
+                        >{html(`${item.content}`)}</td>
                       </tr>
                   </tbody>
                 </table>

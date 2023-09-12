@@ -130,7 +130,7 @@
     }
     &_t { 
       font-family: $popins-medium;
-      font-size: $fs20 !important;
+      font-size: $fs20;
       vertical-align: baseline; 
     }
   }
@@ -146,6 +146,125 @@
     &_div {
       font-size: $fs20;
       color: $lightgray;
+    }
+  }
+}
+
+@media all and ( max-width: $t-width) { 
+  .about { 
+    &_img {
+      overflow: hidden;
+      &::before {
+        content: none;
+      }
+      &:after { 
+        content: none; 
+       }
+      img {
+        object-position: -580px; 
+        width: 100%; 
+      }
+    
+    }
+    &_text {
+      margin: 0 20px;
+      &_1 {
+        font-size: $fs28;
+      }
+      &_2 {
+        font-size: $fs14;
+      }
+    }
+    &_intro {
+      p {
+        font-size: $fs22;
+        width: 100%;
+      }
+    }
+    &_table {
+      &_1 {
+         width: 100%;
+         tr >{
+          td {
+            &:first-child {
+              padding-right: 15px;
+            }
+            white-space: pre;
+            font-size: $fs14;
+            padding: 15px 0px;
+             div {
+              height: 380px !important;
+             }
+          }
+         }
+      }
+      &_2 {
+        width: 100%;
+        tr {
+          > td {
+            &:first-child {
+              padding-right: 15px;
+            }
+          }
+        }
+        tr {
+          td {
+            &:first-child { 
+              vertical-align: baseline;
+              white-space: pre;
+            }
+            font-size: $fs14;
+            padding: 15px 0px; 
+          }
+          div {
+            flex-wrap: wrap;
+            gap: 15px; 
+          }
+          &:nth-of-type(1) {
+            img { 
+              margin-right: 0;
+              &:nth-of-type(1) {
+                width: 40px;
+              }
+              &:nth-of-type(2),
+              &:nth-of-type(3) {
+                width: 50px;
+              }
+            }
+          } 
+          &:nth-of-type(2) {
+            img {
+              margin-right: 0;
+              &:nth-of-type(1){
+                width: 85px;
+              }
+              &:nth-of-type(2) {
+                width: 150px;
+              }
+              &:nth-of-type(3) {
+                width: 85px;
+              }
+            }
+          }
+          &:nth-of-type(3) {
+            img {
+              margin-right: 0;
+              &:nth-of-type(1){
+                width: 90px;
+              }
+              &:nth-of-type(2) {
+                width: 70px;
+              }
+              &:nth-of-type(3) {
+                width: 145px;
+              }
+              &:nth-of-type(4) {
+                width: 115px;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

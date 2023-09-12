@@ -1,6 +1,7 @@
 .footer {
-  &_wrap {
-    width: $width;
+  &_wrap { 
+    width: 100%;
+    max-width: $width; 
     margin: 0 auto;
     padding: 40px 0;    
     display: flex;
@@ -75,4 +76,91 @@
   }
 }
 
- 
+@media all and ( max-width: $d-width) {
+  .footer {
+    &_wrap {
+      h1 {
+        a {
+          font-size: $fs36;
+        }
+      }
+    }
+    &_sns {
+      width: 100%;
+      padding: 15px 0;
+    }
+    &_nav {
+      width: 490px;
+      &_ul {
+        li {
+          span { font-size: $fs16; }
+        }
+        &_sub {
+          margin-top: 10px;
+          li {
+            margin-bottom: 10px;
+            span { 
+              font-size: $fs14;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: $d-width) and ( min-width: $t-width) { 
+  .footer { 
+    &_wrap {
+      justify-content: center;
+      h1 {
+        a {
+          font-size: $fs30;
+          span {
+            text-align: center;
+          }
+        }
+      }
+    }
+    &_nav {
+      display: none;
+    }
+  }
+}
+
+@media all and ( max-width: $t-width) {
+  .footer { 
+    &_wrap {
+      justify-content: center;
+      h1 {
+        a {
+          font-size: $fs30;
+          span {
+            text-align: center;
+          }
+        }
+      }
+    }
+    &_nav {
+      display: none;
+    }
+  }
+}
+// @media all and ( max-width: $m-width) {
+//   .footer { 
+//     &_wrap {
+//       justify-content: center;
+//       h1 {
+//         a {
+//           font-size: $fs30;
+//           span {
+//             text-align: center;
+//           }
+//         }
+//       }
+//     }
+//     &_nav {
+//       display: none;
+//     }
+//   }
+// }

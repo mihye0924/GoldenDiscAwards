@@ -16,3 +16,14 @@
     }
   }
 }
+
+@media all and ( max-width: $t-width) { 
+  .title {
+    &_wrap {
+      margin-top: 30px;
+      h2 {
+        font-size: $fs44;
+      };
+    }
+  }
+}

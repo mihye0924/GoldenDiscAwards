@@ -119,3 +119,46 @@
 .center {
   text-align: center;
 }
+
+
+
+@media all and ( max-width: $t-width) {
+  .vote {
+    &_wrap {
+      margin: 0 20px;
+    }
+    &_img {
+      img {
+        height: 16px;
+      }
+    }
+    &_title {
+      margin-top: 20px;
+      font-size: $fs14;
+    }
+    &_sub_title {
+      &_1 {
+        font-size: $fs14;
+        margin-top: 20px;
+      }
+    }
+    &_border{
+      margin: 50px auto;
+    }
+    &_table {
+      width: 100%;
+      border-spacing: 0;
+      tr {
+        td { 
+          font-size: 14px; 
+          padding: 10px 0;
+          &:first-child { 
+            white-space: pre;
+            padding-right: 25px;
+            font-size: $fs14;
+          }
+        }
+      }
+    }
+  }
+}

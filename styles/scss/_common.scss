@@ -9,9 +9,10 @@
         z-index: 1;
         display: flex;
         flex-direction: column;
-        width: $width; 
+        width: 100%;
+        max-width: $width; 
         margin: 0 auto;
-        padding: 80px 0 20px 0;
+        padding: 80px 0 0 0;
     }
 
     &-footer {
@@ -19,8 +20,7 @@
     }
 }
 
-// flex
-
+// flex 
 .flex {
     display: flex;
 }
@@ -28,6 +28,7 @@
     justify-content: space-between;
 }
 
+// table
 .table {
     border-collapse : collapse;
     & { 
@@ -35,4 +36,22 @@
             border: 1px solid $darkgray;
         }
     }
+}
+
+
+@media all and ( max-width: $d-width) { 
+    .l {
+        &-content {
+            display: block;
+            max-width: 100%;
+
+        }
+    }
+}
+
+@media all and ( max-width: $t-width) {
+  
+}
+@media all and ( max-width: $m-width) {
+  
 }

@@ -61,9 +61,9 @@ export default function Header() {
                                 EN
                             </button>
                         </div>
-                        {/* <button className={header.header_menu} onClick={handlerMenu}>
+                        <button className={header.header_menu} onClick={handlerMenu}>
                             <span />
-                        </button>  */}
+                        </button> 
                     </div>
                 </div>
             </div>

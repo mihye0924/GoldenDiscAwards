@@ -3,7 +3,7 @@ import notice from '@/styles/scss/content/notice.module.scss'
 import { noticeList } from "./api/Notice"; 
 import Link from "next/link";
 import React, { useState } from "react"; 
-import Pagination from "react-js-pagination"; 
+import Pagination from "react-js-pagination";  
 
 export default function NoticePage() { 
   const [page, setPage] = useState(0); 

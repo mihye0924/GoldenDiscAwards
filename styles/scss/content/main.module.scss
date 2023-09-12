@@ -3,13 +3,12 @@
     width: 100%;
     height: 100%; 
     background: linear-gradient(to right, #e73d00 2%, #fd9c6f 60%, #e96b35)
-  }
-  
+  } 
   &_wrap {
     position: relative;
     margin: 0 auto;
-    height: calc(100vh - 80px);
-    
+    box-sizing: border-box;
+    height: 100vh;
   }
   &_title {
     &_t {
@@ -17,11 +16,11 @@
       font-size: $fs148;
       position: absolute;
       right: 0;
-      bottom: 50%;
+      bottom: 40%;
       text-align: right;
       z-index: 1;
       p {
-        line-height: $lineH;
+        line-height: $lineH; 
         &:last-child { 
           font-size: $fs96;
           margin-top: 20px;
@@ -31,10 +30,11 @@
     }
     &_b {
       position: absolute;
-          bottom: 35px;
-          left: 0;
-          font-family: "Poppins-ExtraLight";
-          font-size: 20px; 
+      bottom: 35px;
+      left: 0;
+      font-family: "Poppins-ExtraLight";
+      font-size: 20px; 
+      padding-left: 20px;
     }
   }
   &_img_wrap { 
@@ -51,6 +51,106 @@
       }
     }
   }
+} 
+
+
+@media all and ( max-width: $d-width) {
+  .main {
+    &_title {
+      &_b {
+        font-size: $fs14;
+      }
+      &_t {
+        font-size: $fs70;
+        bottom: 30%;
+        right: 50%;
+        transform: translate(50%,50%);
+        p { 
+          text-align: center;
+          &:last-child { 
+            font-size: $fs44; 
+          }
+        }
+      }
+    }
+    &_img_wrap {
+      &_2 {
+        width: 450px;
+        height: 450px;
+        top: 40%;
+        img {
+          width: 495px;
+          height: 495px;
+          position: absolute;
+          left: -20px;
+          top: -20px; 
+        }
+      }
+    }
+  } 
 }
-@keyframes circle {
- }
+
+@media all and ( max-width: $t-width) {
+  .main { 
+    &_title {  
+      &_t {
+        font-size: $fs50;
+        bottom: 40%; 
+      }
+    }
+    &_img_wrap {
+      &_2 {
+        width: 330px;
+        height: 330px;
+        top: 35%;
+        img {
+          width: 375px;
+          height: 375px;
+          position: absolute;
+          left: -20px;
+          top: -20px;
+        }
+      }
+    }
+  } 
+}
+@media all and ( max-width: $m-width) {
+  .main {
+    &_wrap {
+      height: 100vh;
+      padding: 0 20px;
+      box-sizing: border-box; 
+    }
+    &_title {
+      &_b {
+        font-size: 9px;
+        opacity: 0.8;
+      }
+      &_t {
+        font-size: $fs36;
+        width: 320px;
+        word-break: break-all;
+        p { 
+          text-align: center;
+          &:last-child { 
+            font-size: $fs22; 
+          }
+        }
+      }
+    }
+    &_img_wrap {
+      &_2 {
+        width: 300px;
+        height: 300px;
+        top: 30%;
+        img {
+          width: 350px;
+          height: 350px;
+          position: absolute;
+          left: -25px;
+          top: -25px;
+        }
+      }
+    }
+  } 
+}

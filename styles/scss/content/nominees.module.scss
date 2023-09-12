@@ -119,3 +119,30 @@
     color: $white !important;
   }
 }
+@media all and ( max-width: $t-width) { 
+.nominees {
+  &_ul {
+    margin-top: 30px;
+    button {
+      font-size: $fs14;
+    }
+    li {
+      padding: 5px 10px;
+    }
+  }
+  &_content{
+    margin: 20px 0 30px 0;
+    height: 680px;
+    &_right {
+      &_etc {
+        li{
+          width: 100%;
+            img {
+              width: 100%;
+            }
+          }
+        }
+      } 
+    }
+  }
+}

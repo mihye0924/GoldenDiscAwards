@@ -4,6 +4,7 @@
     gap: 70px;
     justify-content: space-around;
     margin-bottom: 100px;
+    margin-right: 70px;
     p {
       img { 
         width: auto;
@@ -16,5 +17,24 @@
       }
     }
   }
-
+}
+@media all and ( max-width: $m-width) {
+  .maq {
+    &_wrap{ 
+      gap: 30px; 
+      margin-bottom: 20px;
+      margin-right: 30px;
+      p {
+        img { 
+          width: auto;
+          height: 25px;
+        }
+        &:nth-of-type(4) {
+          img { 
+            width: 110px;
+          }
+        }
+      }
+    }
+  }
 }

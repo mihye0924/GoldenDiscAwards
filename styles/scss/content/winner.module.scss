@@ -55,3 +55,174 @@
     }
   }
 } 
+
+@media all and ( max-width: $d-width) {
+  .winner {
+    &_box {
+      &:last-child {
+        .winner_box_img {
+          img {
+            &:last-of-type {
+              width: 455px;
+              bottom: -215px; 
+            }
+          }
+        }
+      }
+      &_t {
+        h3 {
+          font-size: $fs44;
+        }
+        p {
+          &:nth-of-type(1){
+            font-size: $fs44; 
+          }
+          &:nth-of-type(2) {
+            margin: 40px 0 0 0;
+            font-size: $fs18;
+          }
+        }
+      }
+      &_img {
+        img {
+          width: 530px;
+          &:last-of-type {
+            width: 355px;
+          }
+        }
+      }
+    }
+  }
+}
+@media all and ( max-width: $d-width ) and (min-width: $t-width) {
+  .winner {
+    &_wrap {
+      margin: 0 20px;
+    }
+    &_box {
+      margin: 50px 0;
+      &:last-child {
+        margin: 0;
+        .winner_box_img {
+          flex-direction: column-reverse;
+          img {
+            &:last-of-type {
+              width: 100%;
+            }
+          }
+        }
+      }
+      &_t {
+        h3 {
+          font-size: $fs36;
+        }
+        p {
+          &:nth-of-type(1){
+            font-size: $fs36; 
+          }
+          &:nth-of-type(2) {
+            margin: 10px 0 0 0;
+            font-size: $fs14;
+          }
+        }
+      }
+      &_img {
+        flex-direction: column;
+        img {
+          width: 100%;
+          &:last-of-type {
+            display: none;
+          }
+        }
+      } 
+    }
+  }
+}
+@media all and ( max-width: $t-width) {
+  .winner {
+    &_wrap {
+      margin: 0 20px;
+    }
+    &_box {
+      margin: 50px 0;
+      &:last-child {
+        margin: 0;
+        .winner_box_img {
+          flex-direction: column-reverse;
+          img {
+            &:last-of-type {
+              width: 100%;
+            }
+          }
+        }
+      }
+      &_t {
+        h3 {
+          font-size: $fs36;
+        }
+        p {
+          &:nth-of-type(1){
+            font-size: $fs36; 
+          }
+          &:nth-of-type(2) {
+            margin: 10px 0 0 0;
+            font-size: $fs14;
+          }
+        }
+      }
+      &_img {
+        flex-direction: column;
+        img {
+          width: 100%;
+          &:last-of-type {
+            display: none;
+          }
+        }
+      } 
+    }
+  }
+}
+// @media all and ( max-width: $m-width) {
+//   .winner {
+//     &_wrap {
+//       margin: 0 20px;
+//     }
+//     &_box {
+//       margin: 50px 0;
+//       &:last-child {
+//         margin: 0;
+//         .winner_box_img {
+//           flex-direction: column-reverse;
+//           img {
+//             &:last-of-type {
+//               width: 100%;
+//             }
+//           }
+//         }
+//       }
+//       &_t {
+//         h3 {
+//           font-size: $fs36;
+//         }
+//         p {
+//           &:nth-of-type(1){
+//             font-size: $fs36; 
+//           }
+//           &:nth-of-type(2) {
+//             margin: 10px 0 0 0;
+//             font-size: $fs14;
+//           }
+//         }
+//       }
+//       &_img {
+//         flex-direction: column;
+//         img {
+//           width: 100%;
+//           &:last-of-type {
+//             display: none;
+//           }
+//         }
+//       } 
+//     }
+//   }
+// }

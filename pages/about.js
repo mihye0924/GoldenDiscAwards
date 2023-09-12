@@ -42,7 +42,7 @@ export default function aboutPage() {
             <colgroup>
               <col width="10%" />
               <col width="8%" />
-              <col width="85%" />
+              <col width="82%" />
             </colgroup>
             <tbody>
               <tr>
@@ -79,7 +79,7 @@ export default function aboutPage() {
             <colgroup>
               <col width="15%" />
               <col width="8%" />
-              <col width="80%" />
+              <col width="82%" />
             </colgroup>
             <tbody>
               <tr>
