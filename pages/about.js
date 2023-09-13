@@ -36,7 +36,7 @@ export default function aboutPage() {
             업계 전문가의 공정한 평가로 수상자를 결정함으로써 그 어떤 시상식보다 아티스트와 대중으로부터 큰 신뢰와 권위를 얻고 있는 시상식으로 평가받고 있습니다.
           </span>
         </div>
-        <div className={about.about_intro}>
+        <div className={`${about.about_intro} ${about.about_intro_pc}`}>
           <p>제36회 골든디스크어워즈</p>
           <table className={about.about_table_1}>
             <colgroup>
@@ -117,7 +117,66 @@ export default function aboutPage() {
             </tbody>
           </table>
         </div>
+        <div className={`${about.about_intro} ${about.about_intro_mo}`}>
+          <p>제36회 골든디스크어워즈</p>
+          <ul className={about.about_intro_ul_1}>
+            <li>INFORMATION</li>
+            <li>
+              <span>일시</span>
+              <span>2023년 1월 7일 (토) 오후 8시 (KST 8:00 PM)</span>
+            </li> 
+            <li>
+              <span>장소</span>
+              <span>태국 방콕 라자망갈라 스타디움 2F</span>
+            </li>  
+            <li>
+              <div style={{ width: '100%', height: '580px' }}>
+                <GoogleMapReact
+                  bootstrapURLKeys={{ key: API_KEY }}
+                  defaultCenter={defaultProps.center}
+                  defaultZoom={defaultProps.zoom}
+                >
+                  <AnyReactComponent
+                    lat={59.955413}
+                    lng={30.337844}
+                    text="My Marker"
+                  />
+                </GoogleMapReact> 
+              </div> 
+            </li>  
+          </ul> 
+          <ul className={about.about_intro_ul_2}> 
+            <li>SPONSOR</li>
+            <li>
+              <span>방송</span>
+              <div>
+                <img src="/images/content/jtbc.png" alt="jtbc" />
+                <img src="/images/content/jtbc2.png" alt="jtbc2" />
+                <img src="/images/content/jtbc4.png" alt="jtbc4" />
+              </div>
+            </li> 
+            <li>
+              <span>중계</span>
+              <div>
+                <img src="/images/content/tiktok_3.png" alt="tiktok" />
+                <img src="/images/content/tbc_channel.png" alt="tbc_channel" />
+                <img src="/images/content/paravi.png" alt="paravi" />
+              </div>
+            </li> 
+            <li>
+              <span>협찬</span>
+              <div>
+                <img src="/images/content/tiktok_3.png" alt="tiktok" />
+                <img src="/images/content/baoji.png" alt="baoji" />
+                <img src="/images/content/hyundai.png" alt="hyundai" />
+                <img src="/images/content/ace.png" alt="ace" />
+              </div>
+            </li> 
+          </ul>
+        </div>
       </div>
     </div>
   );
 }
+
+ 

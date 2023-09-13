@@ -1,6 +1,6 @@
 .vote {
   &_wrap {
-    margin: 0 20px 100px 0;
+    margin: 0 0 100px 0;
   }
   &_title {
     margin-top: 80px;
@@ -101,7 +101,8 @@
     right: 0; 
     img {
       position: relative;
-      top: 140px;
+      top: 0;
+      object-position: 200px;
     }
     &::after { 
       content: "";
@@ -120,8 +121,93 @@
   text-align: center;
 }
 
-
-
+@media all and ( max-width: 1600px) and (min-width: $d-width) {
+  .vote2 {
+    &_wrap {
+      :global {
+        .l-content {
+          padding: 0;
+        }
+      }
+    }
+    &_img {
+      position: absolute;
+      right: 0; 
+      img {  
+        width: 1200px;
+        opacity: 0.4;
+        object-position: 300px;
+      } 
+    }
+  }
+}
+@media all and ( max-width: $d-width) {
+  .vote {
+    &_wrap {
+      margin: 0 20px;
+    }
+    &_img {
+      img {
+        height: 20px;
+      }
+    }
+    &_title {
+      margin-top: 20px;
+      font-size: $fs20;
+    }
+    &_sub_title {
+      &_1 {
+        font-size: $fs20;
+        margin-top: 20px;
+      }
+    }
+    &_border{
+      margin: 50px auto;
+    }
+    &_table {
+      border-spacing: 0;
+      tr {
+        td { 
+          font-size: $fs16; 
+          padding: 10px 0;
+          &:first-child { 
+            white-space: pre;
+            padding-right: 25px;
+            font-size: $fs16;
+          }
+        }
+      }
+    }
+    &_left {  
+      .vote {
+        &_table {
+          margin: 0;
+          border-spacing: 0 10px;
+        }
+      }
+    }
+  }
+  .vote2 {
+    &_wrap {
+      padding: 0;
+      :global {
+        .l-content {
+          padding: 30px 0 0 0;
+        }
+      }
+    }
+    &_img {
+      position: absolute;
+      right: 0; 
+      top: -35px;
+      img {  
+        width: 1200px;
+        opacity: 0.4;
+        object-position: 300px;
+      } 
+    }
+  }
+}
 @media all and ( max-width: $t-width) {
   .vote {
     &_wrap {
@@ -129,16 +215,16 @@
     }
     &_img {
       img {
-        height: 16px;
+        height: 20px;
       }
     }
     &_title {
       margin-top: 20px;
-      font-size: $fs14;
+      font-size: $fs18;
     }
     &_sub_title {
       &_1 {
-        font-size: $fs14;
+        font-size: $fs18;
         margin-top: 20px;
       }
     }
@@ -150,15 +236,74 @@
       border-spacing: 0;
       tr {
         td { 
-          font-size: 14px; 
+          font-size: $fs16; 
           padding: 10px 0;
           &:first-child { 
             white-space: pre;
             padding-right: 25px;
-            font-size: $fs14;
+            font-size: $fs16;
           }
         }
       }
+    }
+    &_left {  
+      .vote {
+        &_table {
+          margin: 0;
+          border-spacing: 0 10px;
+        }
+      }
+    }
+  } 
+  .vote2 {
+    &_wrap {
+      :global {
+        .l-content {
+          padding: 30px 0 0 0;
+        }
+      }
+    }
+    &_img {
+      display: none;  
+    }
+  }
+}
+@media all and ( max-width: $m-width) {
+  .vote { 
+    &_title { 
+      font-size: $fs14;
+    } 
+    &_sub_title {
+      &_1 {
+        font-size: $fs14;
+        margin-top: 20px;
+      }
+    }
+    &_table { 
+      tr {
+        td { 
+          font-size: $fs14; 
+          padding:0;
+          &:first-child { 
+            white-space: pre;
+            padding-right: 20px;
+            font-size: $fs14;
+            vertical-align: baseline
+          }
+        }
+      }
+    }
+  } 
+  .vote2 {
+    &_wrap {
+      :global {
+        .l-content {
+          padding: 30px 0 0 0;
+        }
+      }
+    }
+    &_img {
+      display: none;  
     }
   }
 }

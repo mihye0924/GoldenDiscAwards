@@ -17,6 +17,15 @@
   }
 }
 
+@media all and ( max-width: $d-width) { 
+  .title {
+    &_wrap { 
+      h2 {
+        font-size: $fs65;
+      };
+    }
+  }
+}
 @media all and ( max-width: $t-width) { 
   .title {
     &_wrap {

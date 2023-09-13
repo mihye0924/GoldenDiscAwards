@@ -68,10 +68,12 @@ export default function NomineesPage() {
         { active == '디지털음원부문' &&
           <div className={nominees.nominees_content}>
             <ul className={nominees.nominees_content_left}>
-              <img src='/images/content/nominess/digital01.jpg' alt="IVE" />
-              <p>디지털 음원대상</p>
-              <p>IVE</p>
-              <p>LOVE DIVE</p>
+              <li>
+                <img src='/images/content/nominess/digital01.jpg' alt="IVE" />
+                <p>디지털 음원대상</p>
+                <p>IVE</p>
+                <p>LOVE DIVE</p>
+              </li>
             </ul>
             <div className={nominees.nominees_content_right}>
               {
@@ -92,10 +94,12 @@ export default function NomineesPage() {
          { active == '음반부문' &&
           <div className={nominees.nominees_content}>
             <ul className={`${nominees.nominees_content_left} ${nominees.nominees_content_left_record}`}>
-              <img src='/images/content/nominess/record01.jpg' alt="IVE" />
-              <p>디지털 음반대상</p>
-              <p>방탄소년단</p>
-              <p>Proof</p>
+              <li>
+                <img src='/images/content/nominess/record01.jpg' alt="IVE" />
+                <p>디지털 음반대상</p>
+                <p>방탄소년단</p>
+                <p>Proof</p>
+              </li>
             </ul>
             <div className={`${nominees.nominees_content_right} ${nominees.nominees_content_right_record}`}>
               {

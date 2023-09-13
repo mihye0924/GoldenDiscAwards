@@ -1,11 +1,11 @@
 import header from '@/styles/scss/layout/header.module.scss' 
 import { gnbList } from '@/pages/api/Nav'
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react'; 
 
-export default function Header() {
+export default function Header({ onclick }) {
     const [active, setActive] = useState('')
-    const [lang, setLang] = useState(true)
+    const [lang, setLang] = useState(true) 
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
         return () => {
@@ -21,11 +21,7 @@ export default function Header() {
         } else {
             setActive('')
         }
-    }; 
-    // 메뉴이벤트
-    const handlerMenu = () => {
-        
-    }
+    };  
     return (
         <header className="l-header">
             <div id='scroll' className={`${header.header_wrap} ${active && header[active]}`}>
@@ -34,7 +30,7 @@ export default function Header() {
                         <div className={header.header_logo}> 
                             <Link href="/">GOLDENDISCAWARDS</Link>
                         </div>
-                        <na>
+                        <nav>
                             <ul className={header.header_gnb}>
                                 {gnbList.map((item) => (
                                     <li key={item.id}>
@@ -44,7 +40,7 @@ export default function Header() {
                                     </li>
                                 ))}
                             </ul>
-                        </na>
+                        </nav>
                     </div>
                     <div className={header.header_right}>
                         <div className={header.header_lang} >
@@ -61,7 +57,7 @@ export default function Header() {
                                 EN
                             </button>
                         </div>
-                        <button className={header.header_menu} onClick={handlerMenu}>
+                        <button className={header.header_menu_icon} onClick={onclick}>
                             <span />
                         </button> 
                     </div>

@@ -26,7 +26,7 @@ export default function Footer() {
             </div>
             <div className={footer.footer_wrap}> 
                 <h1>
-                    <a href="#">
+                    <a href="/">
                         GOLDENDISCAWARDS 
                         <span>골든디스크어워즈 2023.01.07</span>
                     </a>

@@ -1,6 +1,12 @@
 .history {
   &_wrap {
     padding: 0 20px;
+    &_pc {
+      display: block;
+    }
+    &_mo {
+      display: none;
+    }
   } 
   &_ul {
     display: flex;
@@ -11,6 +17,7 @@
       border: none;
       font-size: $fs20;
       font-family: $noto-medium;
+      word-break: keep-all;
     } 
     li { 
       padding: 5px 20px;
@@ -37,11 +44,7 @@
             background-color: $orange;
             color: $black;
             position: relative;
-          }
-          &:nth-of-type(1) {
-            // background: linear-gradient(to top, #e73d00 -19%, #fd9c6f 28%, #e96b35 100%);
-           
-          }
+          } 
           &:nth-of-type(2) {
             th { 
               background-color:#212121;
@@ -63,6 +66,7 @@
             font-size: 14px;
             padding: 20px 0;
             position: relative;
+            word-break: keep-all;
             &::after {
               position: absolute;
               content: '';
@@ -85,3 +89,103 @@
     color: $white !important;
   }
 } 
+
+@media all and ( max-width: $d-width) {
+  .history {
+    &_content {
+      h3 {
+        font-size: $fs28;
+      }
+    }
+    &_ul {
+      margin-top: 30px;
+      button {
+        font-size: $fs18;
+      }
+    }
+  }
+  .active {
+    border-radius: 15px;
+  }
+}
+@media all and ( max-width: $t-width) {
+  .history { 
+    &_wrap {
+      &_pc {
+        display: none;
+      }
+      &_mo { 
+        display: block;
+        .history {
+          &_ul {
+            flex-wrap: wrap;
+            li {
+              width: 100%;
+              display: none;
+            }  
+            .active {
+              display: block !important;
+              border-radius: 5px;
+            } 
+          } 
+        }
+      }
+    } 
+    &_content {
+      h3 {
+        font-size: $fs24;
+      }
+      :global {
+        .flex { 
+          flex-direction: column
+        }
+      }
+      table {
+        thead {
+          tr {
+            th {
+              font-size: $fs16;
+            }
+          }
+        }
+      }
+    }
+    &_ul {
+      button {
+        font-size: 12px;
+        word-break: keep-all
+      }
+    }
+  }
+  .select {
+    display: block !important;
+  }
+  .active {
+    border-radius: 10px;
+  }
+}
+
+@media all and ( max-width: $m-width) {
+  .history {  
+    &_content { 
+      table {
+        thead {
+          tr {
+            td {
+              font-size: $fs16;
+            }
+          }
+        }
+        tbody {
+          tr {
+            th { 
+              background: linear-gradient(to left, #e73d00 7%, #fd9c6f 67%, #e96b35 62%);
+              background-clip: text;
+              -webkit-background-clip: text;
+            }
+          }
+        }
+      }
+    }
+  }
+}

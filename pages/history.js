@@ -8,7 +8,7 @@ import HistoryTwo from "./api/history/HistoryTwo";
 import HistoryOne from "./api/history/HistoryOne";
 
 
-export default function HistoryPage() { 
+export default function HistoryPage() {  
   const list = {
     0 : HistoryFive,
     1 : HistoryFour,
@@ -18,6 +18,7 @@ export default function HistoryPage() {
   }
   const [active, setActive] = useState(list[0]);  
   const [classActive, setClassActive] = useState(0)
+  const [select, setSelect] = useState(false)
   const historyNav = [
     {
       num: 'five',
@@ -39,17 +40,22 @@ export default function HistoryPage() {
       num: 'one',
       label: '1~4회(1980년대)' 
     }
-  ] 
- 
+  ]  
   const handleActive = (id) => {   
     setClassActive(id)
+  }
+  const handleToggle = (id) => { 
+    setSelect(true)
+    setActive(list[id]);
+    handleActive(id)
   }
   return(
     <div className="l-content"> 
       <div>
         <Title name="HISTORY" />
       </div>
-      <nav className={history.history_wrap}>
+      {/* pc 일경우 */}
+      <nav className={`${history.history_wrap} ${history.history_wrap_pc}`}>
         <ul className={history.history_ul}>
             {historyNav.map((item, id) => (
               <li key={id}
@@ -62,11 +68,28 @@ export default function HistoryPage() {
               </li>
             ))}
         </ul> 
-      </nav>
+      </nav> 
+      {/* mo 일경우 */}
+      <nav className={`${history.history_wrap} ${history.history_wrap_mo}`}>
+        <ul className={history.history_ul}>
+            {historyNav.map((item, id) => (
+              <li key={id}
+                className={
+                  `${select ? history['select'] : ''} ${id === classActive ? history['active'] : ''}`
+                }>
+                <button onClick={() => {
+                  handleToggle(id)
+                }}>
+                  {item.label}
+                </button>
+              </li>
+            ))}
+        </ul> 
+      </nav> 
       <div>
-      <div className={history.history_content}>
-        { active } 
-      </div>
+        <div className={history.history_content}>
+          { active } 
+        </div>
       </div> 
     </div>
   )

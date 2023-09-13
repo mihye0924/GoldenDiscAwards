@@ -89,3 +89,49 @@
     }
   }
 }
+
+
+@media all and ( max-width: $d-width) {
+  .categories {
+    &_table { 
+      tr {  
+        &:first-child { 
+          td {
+            font-size: $fs16;
+          }
+        }
+        td {    
+          font-size: $fs14;
+          padding: 10px 0; 
+        }  
+      }
+    }
+    &_category {
+      &_1 { 
+        h3 {
+          font-size: $fs28; 
+        }
+        ul {
+          li {
+            font-size: $fs14;
+          }
+        }
+      }
+      &_2 {
+        h3 {
+          font-size: $fs28;
+        }
+        h4 {
+          font-size: $fs16;
+        }
+        ul {
+          li {
+            font-size: $fs14;
+          }
+        }
+      }
+    }
+  }
+}
+@media all and ( max-width: $t-width) {}
+@media all and ( max-width: $m-width) {}

@@ -4,7 +4,7 @@ import Button from '@/components/common/Button'
 export default function Vote({ show, align }) {
   return (
     <section className="l-content">
-      <div className={`${vote.vote_wrap} ${vote[`vote_${align}`]}`}>
+      <div className={`${vote.vote_wrap} ${align && vote[`vote_${align}`]}`}>
         {
           !show &&
           <Button name="VOTE" more="false" align="center" />

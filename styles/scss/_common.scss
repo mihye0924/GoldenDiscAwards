@@ -38,6 +38,11 @@
     }
 }
 
+// active => menu 일경우
+.active {
+    overflow: hidden;
+}
+
 
 @media all and ( max-width: $d-width) { 
     .l {

@@ -99,3 +99,79 @@
     color: $white !important;
   }
 }
+
+@media all and ( max-width: $d-width) {
+  .gdanow {
+    &_ul {
+      margin-top: 30px;
+      button {
+        font-size: $fs18;
+      }
+    }
+    &_content {
+      margin-top: 20px;
+      &_ul {
+        li {
+          width: calc(100%/2);
+          p {
+            font-size: $fs18;
+          }
+        }
+      }
+    }
+    &_button {
+      padding: 20px 0;
+      font-size: $fs28;
+      span { 
+        width: 15px;
+        height: 15px;
+        line-height: 15px;
+        margin-left: 10px;
+      }
+    }
+  }
+}
+@media all and ( max-width: $t-width) {
+  .gdanow {
+    &_content {
+      margin-top: 20px;
+      &_ul {
+        li {
+          width: 100%; 
+        }
+      }
+    }
+  }
+}
+@media all and ( max-width: $m-width) {
+  .gdanow {
+    &_ul {
+      li {
+        padding: 5px 10px; 
+        margin-right: 10px;
+        button {
+          font-size: $fs14;
+        }
+      }
+    }
+    &_content {
+      &_ul {
+        li {
+          p {
+            font-size: $fs14;
+          }
+        }
+      }
+    }
+    &_button {
+      padding: 12px 0;
+      font-size: $fs20;
+      span { 
+        width: 10px;
+        height: 10px;
+        line-height: 10px;
+        font-size: $fs14;
+      }
+    }
+  }
+}

@@ -64,39 +64,41 @@
     }
   }
   &_menu {
-    display: none;
-    cursor: pointer;
-    width: 25px;
-    height: 25px;
-    span {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%); 
-      display: block;
+    &_icon {
+      display: none;
+      cursor: pointer;
       width: 25px;
-      height: 2px;
-      background-color: $white;
-      &::before {
+      height: 25px;
+      span {
         position: absolute;
-        content: '';
+        top: 50%;
+        transform: translateY(-50%); 
+        display: block;
         width: 25px;
         height: 2px;
         background-color: $white;
-        display: block;
-        top: -10px;
+        &::before {
+          position: absolute;
+          content: '';
+          width: 25px;
+          height: 2px;
+          background-color: $white;
+          display: block;
+          top: -10px;
+        }
+        &:after {
+          position: absolute;
+          content: '';
+          width: 25px;
+          height: 2px;
+          background-color: $white;
+          display: block;
+          bottom: -10px;
+        }
       }
-      &:after {
-        position: absolute;
-        content: '';
-        width: 25px;
-        height: 2px;
-        background-color: $white;
-        display: block;
-        bottom: -10px;
-      }
-    }
-    background-color: transparent; 
-    border: none;
+      background-color: transparent; 
+      border: none;
+    } 
   }
 }
 
@@ -149,31 +151,9 @@
       }
     }
     &_menu {
-      display: block;
+      &_icon { 
+        display: block;
+      }
     }
-  } 
+  }  
 }
-// @media all and ( max-width: $m-width) {
-//   .header {
-//     &_inner {
-//       display: none;
-//     }
-//     &_gnb {
-//       margin-left: 20px;
-//       li {
-//         font-size: $fs14;
-//         padding: 5px;
-//       }
-//     }
-//     &_logo {
-//       font-size: $fs20;
-//     }
-//     &_lang {
-//       button {
-//         &:first-child {
-//           margin-right: 15px;
-//         } 
-//       }
-//     }
-//   }
-// }
