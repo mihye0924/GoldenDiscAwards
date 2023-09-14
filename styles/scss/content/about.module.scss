@@ -404,3 +404,13 @@
     } 
   }
 }
+
+@media all and ( max-width: $m-width) { 
+  .about {
+    &_img {
+      img {
+        object-position: -780px;
+      }
+    }
+  }
+}

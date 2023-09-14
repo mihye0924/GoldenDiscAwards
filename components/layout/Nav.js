@@ -24,6 +24,9 @@ export default function Nav({ show, onClose }) {
             ))}
           </ul>
         </nav> 
+        <div className={menu.menu_logo} onClick={onClose}> 
+            <Link href="/">GOLDENDISCAWARDS</Link>
+        </div>
         <button className={menu.menu_icon} onClick={onClose}>
             <span />
         </button>        

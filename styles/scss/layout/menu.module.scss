@@ -9,10 +9,9 @@
   }
   &_nav {
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    margin-bottom: 10px;
+    transform: translate(-50%,-50%); 
     li {
       font-size: $fs24;
       text-align: center;
@@ -68,6 +67,13 @@
       }
     }
   } 
+  &_logo {
+    margin: 15px 20px;
+    a {
+      font-family: $popins-medium;
+      font-size: $fs24;
+    }
+  }
 }
 @keyframes opacity {
   0%{ opacity: 0; }
