@@ -1,6 +1,6 @@
 import Title from "@/components/common/Title";
 import history from '@/styles/scss/content/history.module.scss'
-import { useState } from "react"; 
+import { useEffect, useState } from "react"; 
 import HistoryFive from "./api/history/HistoryFive";
 import HistoryFour from "./api/history/HistoryFour";
 import HistoryThree from "./api/history/HistoryThree";
@@ -16,9 +16,10 @@ export default function HistoryPage() {
     3 : HistoryTwo,
     4 : HistoryOne,
   }
-  const [active, setActive] = useState(list[0]);  
-  const [classActive, setClassActive] = useState(0)
-  const [select, setSelect] = useState(false)
+  const [active, setActive] = useState(list[0]); // list 값 번째 찾기
+  const [classActive, setClassActive] = useState(0) // active 된 클래스 
+  const [select, setSelect] = useState(false)  // select 열림, 닫힘
+  const [selectName, setSelectName]= useState('34~36회(2020년대)') //
   const historyNav = [
     {
       num: 'five',
@@ -40,15 +41,22 @@ export default function HistoryPage() {
       num: 'one',
       label: '1~4회(1980년대)' 
     }
-  ]  
-  const handleActive = (id) => {   
-    setClassActive(id)
+  ]   
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  })
+  // 스크롤 이벤트
+  const handleScroll = () => {
+    const scroll = window.scrollY; 
+    if (scroll > 0) {
+      setSelect(false)
+    }
   }
-  const handleToggle = (id) => { 
-    setSelect(true)
-    setActive(list[id]);
-    handleActive(id)
-  }
+
   return(
     <div className="l-content"> 
       <div>
@@ -62,7 +70,7 @@ export default function HistoryPage() {
                 className={
                   `${id === classActive ? history['active'] : ''}`
                 }>
-                <button onClick={() => { setActive(list[id]); handleActive(id) }}>
+                <button onClick={() => { setActive(list[id]); setClassActive(id) }}>
                   {item.label}
                 </button>
               </li>
@@ -70,22 +78,33 @@ export default function HistoryPage() {
         </ul> 
       </nav> 
       {/* mo 일경우 */}
-      <nav className={`${history.history_wrap} ${history.history_wrap_mo}`}>
-        <ul className={history.history_ul}>
-            {historyNav.map((item, id) => (
-              <li key={id}
-                className={
-                  `${select ? history['select'] : ''} ${id === classActive ? history['active'] : ''}`
-                }>
-                <button onClick={() => {
-                  handleToggle(id)
-                }}>
-                  {item.label}
-                </button>
-              </li>
-            ))}
-        </ul> 
-      </nav> 
+      <button className={
+        `${history.history_wrap_mo} ${history.history_wrap_mo_on}` 
+      }
+        onClick={() => {setSelect(true)}}
+      >{selectName}</button>
+      <ul className={`${history.history_wrap_mo} ${history.history_wrap_mo_listbox} ${select ? history['on'] : false}`} id="listbox">
+        {
+          historyNav.map((item, id) => (
+            <li key={id}
+              className={
+                `${id === classActive ? history['active'] : ''}`
+              }>
+              <button
+                onClick={(e) => {
+                  setActive(list[id]);
+                  setClassActive(id);
+                  setSelect(false);
+                  setSelectName(item.label)
+                }}
+                className={history.history_wrap_mo_list}
+              >
+                {item.label}
+              </button>
+            </li>
+          ))
+        }
+      </ul>
       <div>
         <div className={history.history_content}>
           { active } 
