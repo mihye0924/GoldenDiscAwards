@@ -1,8 +1,11 @@
 import Link from "next/link";
 import menu from '@/styles/scss/layout/menu.module.scss' 
 import { FNavList } from '@/pages/api/FNav'
+import Context from '@/context/context';
+import { useContext } from 'react'; 
 
 export default function Nav({ show, onClose }) { 
+  const { prefix } = useContext(Context);
   return ( 
     show &&
     <div className={menu.menu_bg}> 
@@ -14,7 +17,7 @@ export default function Nav({ show, onClose }) {
                   <ul className={ menu.menu_nav_sub }>
                       {item.subtitle.map((item2) => (
                       <li key={item2.id}>
-                          <a href={ item2.link }>
+                          <a href={`${prefix}/${item2.link}`}>
                               <span>{item2.label}</span>
                           </a>
                       </li>

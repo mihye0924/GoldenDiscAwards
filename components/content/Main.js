@@ -1,5 +1,9 @@
 import main from '@/styles/scss/content/main.module.scss'
+import Context from '@/context/context';
+import { useContext } from 'react';
+
 export default function Main() {
+  const { prefix } = useContext(Context);
   return ( 
   <section className={main.main_bg }> 
     <div className={`l-content ${main.main_wrap}` }>
@@ -9,7 +13,7 @@ export default function Main() {
       </div>
       <div className={main.main_img_wrap_1}>
         <div className={main.main_img_wrap_2}>
-          <img src="/images/content/main.png" alt=""  />
+            <img src={`${prefix}/images/content/main.png` } alt=""  />
         </div>
         </div>
       <div className={main.main_title_b}>

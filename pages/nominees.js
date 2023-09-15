@@ -2,8 +2,11 @@ import Title from "@/components/common/Title";
 import nominees from '@/styles/scss/content/nominees.module.scss';
 import { useState } from "react";
 import { NomineesNav, NomineesContent } from '@/pages/api/Nominess'
+import Context from '@/context/context';
+import { useContext } from 'react'; 
 
 export default function NomineesPage() {
+  const { prefix } = useContext(Context);
   const [active, setActive] = useState('전체'); 
   const handleActive = (e) => { 
     setActive(e.target.innerText) 
@@ -33,7 +36,7 @@ export default function NomineesPage() {
                 NomineesContent.soundTrak.map((item) => (
                   <li key={item.id}>
                     <div>
-                      <img src={item.img} alt={item.title} />
+                      <img src={`${prefix}/${item.img}`} alt={item.title} />
                       <p>{item.awards}</p>
                       <p>{item.title}</p>
                     </div>
@@ -44,7 +47,7 @@ export default function NomineesPage() {
                 NomineesContent.record.map((item) => (
                   <li key={item.id}>
                     <div>
-                      <img src={item.img} alt={item.title} />
+                      <img src={`${prefix}/${item.img}`} alt={item.title} />
                       <p>{item.awards}</p>
                       <p>{item.title}</p>
                     </div>
@@ -55,7 +58,7 @@ export default function NomineesPage() {
                 NomineesContent.etc.map((item) => (
                   <li key={item.id}>
                     <div>
-                      <img src={item.img} alt={item.title} />
+                      <img src={`${prefix}/${item.img}`} alt={item.title} />
                       <p>{item.awards}</p>
                       <p>{item.title}</p>
                     </div>
@@ -69,7 +72,7 @@ export default function NomineesPage() {
           <div className={nominees.nominees_content}>
             <ul className={nominees.nominees_content_left}>
               <li>
-                <img src='/images/content/nominess/digital01.jpg' alt="IVE" />
+                <img src={ `${prefix}/images/content/nominess/digital01.jpg`} alt="IVE" />
                 <p>디지털 음원대상</p>
                 <p>IVE</p>
                 <p>LOVE DIVE</p>
@@ -80,7 +83,7 @@ export default function NomineesPage() {
                 NomineesContent.soundTrak.map((item) => (
                   <li key={item.id}>
                     <div>
-                      <img src={item.img} alt={item.title} />
+                      <img src={`${prefix}/${item.img}`} alt={item.title} />
                       <p>{item.awards}</p>
                       <p>{item.title}</p>
                       <p>{item.subTitle}</p>
@@ -95,7 +98,7 @@ export default function NomineesPage() {
           <div className={nominees.nominees_content}>
             <ul className={`${nominees.nominees_content_left} ${nominees.nominees_content_left_record}`}>
               <li>
-                <img src='/images/content/nominess/record01.jpg' alt="IVE" />
+                <img src={ `${prefix}/images/content/nominess/record01.jpg` } alt="IVE" />
                 <p>디지털 음반대상</p>
                 <p>방탄소년단</p>
                 <p>Proof</p>
@@ -106,7 +109,7 @@ export default function NomineesPage() {
                 NomineesContent.record.map((item) => (
                   <li key={item.id}>
                     <div>
-                      <img src={item.img} alt={item.title} />
+                      <img src={`${prefix}/${item.img}`} alt={item.title} />
                       <p>{item.awards}</p>
                       <p>{item.title}</p>
                       <p>{item.subTitle}</p>
@@ -124,7 +127,7 @@ export default function NomineesPage() {
                 NomineesContent.etc.map((item) => (
                   <li key={item.id}>
                     <div>
-                      <img src={item.img} alt={item.title} />
+                      <img src={`${prefix}/${item.img}`} alt={item.title} />
                       <p>{item.awards}</p>
                       <p>{item.title}</p>
                     </div>

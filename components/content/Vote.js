@@ -1,7 +1,10 @@
 import vote from '@/styles/scss/content/vote.module.scss'
 import Button from '@/components/common/Button'
+import Context from '@/context/context';
+import { useContext } from 'react';
 
-export default function Vote({ show, align }) {
+export default function VotePage({ show, align }) {
+  const { prefix } = useContext(Context);
   return (
     <section className="l-content">
       <div className={`${vote.vote_wrap} ${align && vote[`vote_${align}`]}`}>
@@ -12,7 +15,7 @@ export default function Vote({ show, align }) {
         <div className={vote.vote_title}>
           12월 20일(화) 오전 11시(KST)부터
           <p className={vote.vote_img}>
-            <img src="/images/content/tiktok.png" />
+            <img src={ `${prefix}/images/content/tiktok.png`} alt=''/>
             골든디스크 인기상 투표가 시작됩니다.
           </p>
         </div>
@@ -44,7 +47,7 @@ export default function Vote({ show, align }) {
             <tr>
               <td>QR코드</td>
               <td>
-                <img src="/images/content/tiktok_qr.png" alt='틱톡QR' />
+                <img src={`${prefix}/images/content/tiktok_qr.png`} alt='틱톡QR' />
               </td>
             </tr>
           </tbody>

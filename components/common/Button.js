@@ -1,7 +1,10 @@
 import button from '@/styles/scss/common/button.module.scss' 
+import Context from '@/context/context';
+import { useContext } from 'react';
  
 
 export default function Button({ name, more, align }) {  
+  const { prefix } = useContext(Context);
   return (
     <div className={ button.button_wrap }>
       <div className="flex space-between">
@@ -13,7 +16,7 @@ export default function Button({ name, more, align }) {
           <button>
             더보기
             <p>
-              <img src="/images/common/right_btn.png" alt=''/>
+              <img src={ `${prefix}/images/common/right_btn.png` } alt=''/>
             </p>
           </button>
         }

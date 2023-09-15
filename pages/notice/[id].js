@@ -34,7 +34,7 @@ export default function Notice1() {
                           colSpan="2"
                           className={`${notice.notice_list_table_content}`}
                           
-                        >{html(`${item.content}`)}</td>
+                        >{html(`${item.content ? item.content : '글이 없습니다.'}`)}</td>
                       </tr>
                   </tbody>
                 </table>
