@@ -280,6 +280,7 @@
       }
     }
     &_table { 
+      margin-bottom: 100px;
       tr {
         td { 
           font-size: $fs14; 
@@ -289,6 +290,9 @@
             padding-right: 20px;
             font-size: $fs14;
             vertical-align: baseline
+          }
+          img {
+            width: 150px;
           }
         }
       }

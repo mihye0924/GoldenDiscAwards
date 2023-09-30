@@ -17,7 +17,7 @@ export default function Nav({ show, onClose }) {
                   <ul className={ menu.menu_nav_sub }>
                       {item.subtitle.map((item2) => (
                       <li key={item2.id}>
-                          <a href={`${prefix}/${item2.link}`}>
+                          <a href={`${prefix}${item2.link}`}>
                               <span>{item2.label}</span>
                           </a>
                       </li>
