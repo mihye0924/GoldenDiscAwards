@@ -1,0 +1,177 @@
+.gdanow {
+  &_wrap {
+    padding: 0 20px;
+    margin-bottom: 120px;
+  }
+  &_ul {
+    display: flex;
+    margin-top: 80px;
+    button {
+      background-color: transparent;
+      color: $lightgray;
+      border: none;
+      font-size: $fs20;
+      font-family: $noto-medium;
+    } 
+    li { 
+      padding: 5px 20px;
+      box-sizing: border-box;
+      margin-right: 20px;
+      border: 1px solid transparent;
+    }
+  }
+  &_content {
+    margin-top: 60px;
+    &_ul {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      li{
+        padding: 20px;
+        border: 1px solid $darkgray;
+        width: calc(100% /3);
+        box-sizing: border-box;
+        a{
+          display: block;
+        }
+        div { 
+          position: relative;
+          img {
+            width: 100%;
+          }
+          span {
+            position: absolute;
+            font-size: 20px;
+            bottom: 0;
+            display: block;
+            right: 0;
+            background: rgba(0, 0, 0, 0.741);
+            padding: 10px 30px; 
+          }
+        }
+        p {
+          margin-top: 20px;
+          font-size: $fs22;
+          text-overflow: ellipsis;
+          overflow: hidden; 
+          text-overflow: ellipsis;
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          word-wrap: break-word;
+        }
+      }
+    }
+  }
+  &_button { 
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    color: $lightgray;
+    font-size: $fs33; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    width: 100%;
+    margin: 50px 0;
+    border: 1px solid $darkgray; 
+    border-radius: 10px;
+    span {
+      display: inline-block;
+      margin-left: 20px;
+      width: 25px;
+      height: 25px;
+      line-height: 25px;
+      background-color: $darkgray;
+      color: $white;
+      padding: 8px;
+      font-size: $fs22;
+      border-radius: 50%;
+    }
+  }
+} 
+.active {
+  border: 1px solid $white !important;
+  border-radius: 25px;
+  button {
+    color: $white !important;
+  }
+}
+
+@media all and ( max-width: $d-width) {
+  .gdanow {
+    &_ul {
+      margin-top: 30px;
+      button {
+        font-size: $fs18;
+      }
+    }
+    &_content {
+      margin-top: 20px;
+      &_ul {
+        li {
+          width: calc(100%/2);
+          p {
+            font-size: $fs18;
+          }
+        }
+      }
+    }
+    &_button {
+      padding: 20px 0;
+      font-size: $fs28;
+      span { 
+        width: 15px;
+        height: 15px;
+        line-height: 15px;
+        margin-left: 10px;
+      }
+    }
+  }
+}
+@media all and ( max-width: $t-width) {
+  .gdanow {
+    &_content {
+      margin-top: 20px;
+      &_ul {
+        li {
+          width: 100%; 
+        }
+      }
+    }
+  }
+}
+@media all and ( max-width: $m-width) {
+  .gdanow {
+    &_ul {
+      li {
+        padding: 5px 10px; 
+        margin-right: 10px;
+        button {
+          font-size: $fs14;
+        }
+      }
+    }
+    &_content {
+      &_ul {
+        li {
+          p {
+            font-size: $fs14;
+          }
+        }
+      }
+    }
+    &_button {
+      padding: 12px 0;
+      font-size: $fs20;
+      span { 
+        width: 10px;
+        height: 10px;
+        line-height: 10px;
+        font-size: $fs14;
+      }
+    }
+  }
+}

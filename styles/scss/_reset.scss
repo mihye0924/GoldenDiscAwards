@@ -1,0 +1,26 @@
+*{ margin:0; padding:0; } 
+html {
+  min-width: 1740px;
+  width: 100%;
+  scroll-behavior: smooth;
+  display: block;
+  box-sizing: border-box;
+}
+body {
+  zoom: 100%;
+}
+body, html { 
+  font-family: $noto-regular; 
+  font-size: $fs14; 
+  color: $white; 
+  background-color: $black;
+ } 
+h1,h2,h3,h4,h5,h6,a,span,p { color: $white; }
+a { text-decoration: none; }
+ul, li { list-style-type: none; }  
+
+@media all and ( max-width: $d-width) { 
+  html {
+    min-width: 100%;
+  }
+}

@@ -1,0 +1,40 @@
+.pagination{
+  &_wrap {
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    button { 
+      cursor: pointer;
+      color: $white;
+      font-size: $fs20; 
+      border-radius: 5px;
+      margin: 0 5px;
+      border: none;
+      background-color: $darkgray;
+      padding: 5px;
+      width: 40px;
+      height: 40px;
+    }
+  }
+  &_active {
+    background-color: $lightgray !important; 
+    color: $black !important;
+  }
+  &_left {
+    img {
+      width: 25px;
+    }
+  }
+  &_right {
+    img {
+      width: 25px;
+    }
+  }
+}
+
+
+@media all and ( max-width: $d-width ) { 
+}
+@media all and ( max-width: $t-width) {}
+@media all and ( max-width: $m-width) {}

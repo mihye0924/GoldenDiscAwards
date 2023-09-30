@@ -1,29 +1,17 @@
 /** @type {import('next').NextConfig} */
-const API_KEY = process.env.API_KEY
+const path = require('path')
 
 const nextConfig = {
+  basePath: "/GoldenDiscAwards",
   reactStrictMode: true,
-  async redirects() {
-    return [
-      {
-        source: "/old-blog/:path*",
-        destination: "/new-sexy-blog/:path*",
-        permanent: false
-      }
-    ]
-  },
-  async rewrites() {
-    return [
-      {
-        source: "/api/movies",
-        destination: `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}`
-      },
-      {
-        source: "/api/movies/:id",
-        destination: `https://api.themoviedb.org/3/movie/:id?api_key=${API_KEY}`
-      }
-    ]
-  }
-}
+  assetPrefix: 
+    process.env.NODE_ENV === "production"
+    ? "https://mihye0924.github.io/GoldenDiscAwards"
+    : "", 
+  sassOptions: {
+    includePaths: [path.join(__dirname, 'styles')],
+    prependData: `@import "styles/scss/_variables.scss";`
+  }, 
 
+}
 module.exports = nextConfig

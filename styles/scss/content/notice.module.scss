@@ -1,0 +1,203 @@
+.notice {
+  &_wrap {
+    padding: 0 20px;
+    p {
+      margin-top: 20px;
+      font-size: $fs22;
+    }
+    :global{
+      .pagination{ 
+        display: flex;
+        justify-content: center;
+        margin-bottom: 120px;
+        li {
+          cursor: pointer;
+          color: $white;
+          font-size: $fs20; 
+          border-radius: 5px;
+          margin: 0 5px;
+          border: none;
+          background-color: $darkgray;
+          padding: 5px;
+          width: 40px;
+          height: 40px;
+          text-align: center;
+          line-height: 35px;
+          &.active {
+            background-color: $lightgray !important; 
+            a {
+              color: $black !important;
+            }
+          }
+        }
+      } 
+    }
+  }
+  &_table {    
+    margin: 100px auto 45px auto;
+    width: 100%; 
+    th {
+      padding: 20px 0;
+      border: 1px solid $darkgray;
+    }
+    tr {
+      font-size: $fs16;
+      td {  
+        padding: 20px;
+        color: $lightgray;
+        &:nth-child(1) {
+          text-align: center;
+        }
+        &:nth-child(3) {
+          text-align: center;
+        } 
+      }
+    }
+  } 
+  &_list {
+    &_wrap {
+      padding: 0 20px; 
+      p {
+        margin-top: 20px;
+        font-size: 22px;
+      }
+    }
+    &_title {
+      margin-top: 80px;
+      font-size: $fs30;
+    }
+    &_table {
+      width: 100%;
+      tbody {
+        tr {
+          th {
+            font-size: $fs16;
+            padding: 20px 40px;
+          }
+          td {
+            font-size: $fs16;
+            padding: 20px 40px;
+          }
+        }
+      }
+      &_content {
+        height: 580px;
+        vertical-align: baseline;
+      }
+      &:last-child {
+        margin: 50px 0 40px 0;
+      }
+    }
+    &_button {
+      cursor: pointer;
+      background-color: transparent;
+      border: 0;
+      width: 100%;
+      span {
+        padding:20px 30px; 
+        margin: 50px auto 80px auto;
+        border: 1px solid $darkgray;
+        color: $white;
+        display: block;
+        width: 280px;
+        text-align: center;
+      }
+    }
+  }
+}  
+
+@media all and ( max-width: $d-width) { 
+  .notice {
+    &_wrap {
+      p {
+        font-size: $fs18;
+      }
+      :global { 
+      .pagination{ 
+          li { 
+            width: 25px;
+            height: 25px;
+            line-height: 25px;
+            font-size: $fs14;  
+          }
+        }
+      }
+    }
+    &_table {
+      margin: 30px auto 45px auto;
+      th {
+        padding: 15px 20px;
+      }
+      tr {
+        td {
+          padding: 15px 20px;
+          font-size: $fs16;
+        }
+      }
+    }
+  }
+}
+@media all and ( max-width: $t-width) {
+  .notice {
+    &_wrap {
+      p {
+        font-size: $fs16;
+      }
+      :global { 
+        .pagination{ 
+            li { 
+              width: 25px;
+              height: 25px;
+              line-height: 25px;
+              font-size: $fs14;  
+            }
+          }
+        }
+    }
+    &_table { 
+      tr {
+        td { 
+          font-size: $fs14;
+        }
+      }
+    }
+  }
+}
+@media all and ( max-width: $m-width) {
+  .notice {
+    &_wrap {
+      p {
+        font-size: $fs14;
+      }
+      :global { 
+      .pagination{ 
+          li { 
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            font-size: $fs12;  
+          }
+        }
+      }
+    }
+    &_table {
+      colgroup {
+        col {
+          &:nth-of-type(1) {
+            width: 2% !important;
+          }
+        }
+      }
+      th {
+        padding: 10px;
+        font-size: $fs14;
+      }
+      tr {
+        td {
+          padding: 10px;
+          font-size: $fs12;
+        } 
+      }
+    }
+  }
+}

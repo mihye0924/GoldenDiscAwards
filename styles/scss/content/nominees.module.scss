@@ -1,0 +1,211 @@
+.nominees {
+  &_wrap {
+    padding: 0 20px;
+  }
+  &_ul {
+    display: flex;
+    margin-top: 80px;
+    button {
+      background-color: transparent;
+      color: $lightgray;
+      border: none;
+      font-size: $fs20;
+      font-family: $noto-medium;
+    } 
+    li { 
+      padding: 5px 20px;
+      box-sizing: border-box;
+      margin-right: 20px;
+      border: 1px solid transparent;
+    }
+  }
+  &_content {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 0 120px 0;   
+    &_left {
+      width: 410px; 
+      background: $pink;
+      text-align: center;
+      padding-top: 20px;
+      border: 1px solid $darkgray;
+      li {
+        position: sticky;
+        top: 105px;
+      }
+      img {
+        width: 360px;
+      }
+      p {
+        padding: 0 20px;
+        text-align: left;
+        &:nth-of-type(1) {
+          font-size: $fs36;
+          margin-top: 20px;
+          margin-bottom: 30px;
+        }
+        &:not(:nth-of-type(1)){ 
+          font-size: $fs22;
+        }
+      }
+      &_record {
+        background: #004a9f;
+      }
+    }
+    &_right {
+      overflow: auto;
+      width: 1225px;
+      display: flex;
+      flex-wrap: wrap;
+      &::-webkit-scrollbar {
+        width: 10px;
+      }
+      &::-webkit-scrollbar-thumb {
+        width: 8px;
+        background-color: rgba(43, 43, 43, 0.631);
+      } 
+      li {
+        width: calc( 100% /3 ); 
+        box-sizing: border-box;
+        padding: 20px 20px 30px 20px;
+        border: 1px solid $darkgray;
+        img {
+          width: 360px;
+        }
+        p {
+          // padding: 0 20px;
+          &:nth-of-type(1) {
+            font-size: $fs22;
+            color: $pink;
+            margin: 20px 0 20px 0;
+          }
+          &:not(:nth-of-type(1)) {
+            font-size: $fs20;
+          }
+          &:nth-of-type(3) {
+            color: $lightgray;
+          }
+        }
+      }
+      &_record {
+        li {
+          p {
+            &:nth-of-type(1) {
+              color: $blue;
+            }
+          }
+        }
+      }
+      &_etc {
+        width: 100%;
+        li{
+          width: calc(100% / 4);
+          box-sizing: border-box; 
+          p {
+            &:nth-of-type(1) {
+              color: $gold;
+            }
+          }
+          img {
+            width: 370px;
+          }
+        }
+      }
+    }
+  }
+}
+.active {
+  border: 1px solid $white !important;
+  border-radius: 25px;
+  button {
+    color: $white !important;
+  }
+}
+
+@media all and ( max-width: $d-width) {
+  .nominees {
+    &_ul {
+      margin-top: 30px;
+      button {
+        font-size: $fs18;
+      }
+      li {
+        padding: 5px 10px;
+        margin-right: 10px;
+      }
+    }
+    &_content{
+      margin: 20px 0 30px 0; 
+    &_left {
+      width: 100%;
+      flex-basis: 620px;
+      img { 
+        padding: 0 20px;
+      }
+    }
+    &_right {
+      width: 100%; 
+      li {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+      &_etc {
+        li{
+          width: calc(100%/2);
+            img {
+              width: 100%;
+            }
+          }
+        }
+      } 
+    }
+  }
+}
+@media all and ( max-width: $t-width) { 
+  .nominees {
+  &_ul {
+    margin-top: 30px;
+    button {
+      font-size: $fs14;
+    }
+    li {
+      padding: 5px 10px;
+    }
+  }
+  &_content{
+    flex-direction: column;
+    margin: 20px 0 30px 0;
+    height: 100%; 
+    &_left {
+      flex-basis: initial;
+      padding: 20px 0;
+      img { 
+        width: 100%;
+        box-sizing: border-box;
+      }
+    }
+    &_right {
+      overflow: hidden;
+      &_etc {
+        li{
+          width: 100%;
+            img {
+              width: 100%;
+            }
+          }
+        }
+    } 
+    }
+  }
+}
+@media all and ( max-width: $m-width) { 
+  .nominees {
+    &_ul {
+      button {
+        font-size: $fs12;
+      }
+    }
+  }
+}

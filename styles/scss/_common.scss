@@ -1,0 +1,62 @@
+
+.l { 
+    &-header {
+        padding: 0 20px; 
+    }
+
+    &-content { 
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: $width; 
+        margin: 0 auto;
+        padding: 80px 0 0 0;
+    }
+
+    &-footer {
+        border-top: 1px solid $darkgray; 
+    }
+}
+
+// flex 
+.flex {
+    display: flex;
+}
+.space-between {
+    justify-content: space-between;
+}
+
+// table
+.table {
+    border-collapse : collapse;
+    & { 
+        tr, td{
+            border: 1px solid $darkgray;
+        }
+    }
+}
+
+// active => menu 일경우
+.active {
+    overflow: hidden;
+}
+
+
+@media all and ( max-width: $d-width) { 
+    .l {
+        &-content {
+            display: block;
+            max-width: 100%;
+
+        }
+    }
+}
+
+@media all and ( max-width: $t-width) {
+  
+}
+@media all and ( max-width: $m-width) {
+  
+}

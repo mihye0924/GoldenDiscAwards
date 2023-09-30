@@ -1,0 +1,228 @@
+.winner {
+  &_wrap {
+    margin: 100px 20px;
+  }
+  &_box {
+    margin: 100px 0;
+    &:last-child {
+      margin: 400px 0 200px 0;
+      .winner_box_img {
+        img {
+          &:last-of-type {
+          position: absolute;
+          width: 685px;
+          bottom: -245px;
+          left: 38%;
+          }
+        }
+      }
+    }
+    &_t {  
+      h3 {  
+        font-size: $fs60;
+        font-weight: $fw100;
+      }
+      p { 
+        &:nth-of-type(1) {
+          font-size: $fs60; 
+          font-weight: $fw100;
+        }
+        &:nth-of-type(2) {
+          font-weight: $fw100;
+          margin: 64px 0 0px 0;
+          font-size: 28px;
+          border: 1px solid #c5c5c5;
+          padding: 15px 0px;
+          text-align: center;
+          box-sizing: border-box; 
+        }
+      }  
+    } 
+    &_img {  
+      position: relative; 
+      justify-content: space-between;
+      display: flex;
+      gap: 10px; 
+      img {
+        width: 870px; 
+        &:last-of-type {
+          position: absolute;
+          width: 515px;
+          bottom: -120px;
+          left: 30%;
+        }
+      } 
+    }
+  }
+} 
+
+@media all and ( max-width: $d-width) {
+  .winner {
+    &_box {
+      &:last-child {
+        .winner_box_img {
+          img {
+            &:last-of-type {
+              width: 455px;
+              bottom: -215px; 
+            }
+          }
+        }
+      }
+      &_t {
+        h3 {
+          font-size: $fs44;
+        }
+        p {
+          &:nth-of-type(1){
+            font-size: $fs44; 
+          }
+          &:nth-of-type(2) {
+            margin: 40px 0 0 0;
+            font-size: $fs18;
+          }
+        }
+      }
+      &_img {
+        img {
+          width: 530px;
+          &:last-of-type {
+            width: 355px;
+          }
+        }
+      }
+    }
+  }
+}
+@media all and ( max-width: $d-width ) and (min-width: $t-width) {
+  .winner {
+    &_wrap {
+      margin: 0 20px;
+    }
+    &_box {
+      margin: 50px 0;
+      &:last-child {
+        margin: 0;
+        .winner_box_img {
+          flex-direction: column-reverse;
+          img {
+            &:last-of-type {
+              width: 100%;
+            }
+          }
+        }
+      }
+      &_t {
+        h3 {
+          font-size: $fs36;
+        }
+        p {
+          &:nth-of-type(1){
+            font-size: $fs36; 
+          }
+          &:nth-of-type(2) {
+            margin: 10px 0 0 0;
+            font-size: $fs14;
+          }
+        }
+      }
+      &_img {
+        flex-direction: column;
+        img {
+          width: 100%;
+          &:last-of-type {
+            display: none;
+          }
+        }
+      } 
+    }
+  }
+}
+@media all and ( max-width: $t-width) {
+  .winner {
+    &_wrap {
+      margin: 0 20px;
+    }
+    &_box {
+      margin: 50px 0;
+      &:last-child {
+        margin: 0;
+        .winner_box_img {
+          flex-direction: column-reverse;
+          img {
+            &:last-of-type {
+              width: 100%;
+            }
+          }
+        }
+      }
+      &_t {
+        h3 {
+          font-size: $fs36;
+        }
+        p {
+          &:nth-of-type(1){
+            font-size: $fs36; 
+          }
+          &:nth-of-type(2) {
+            margin: 10px 0 0 0;
+            font-size: $fs14;
+          }
+        }
+      }
+      &_img {
+        flex-direction: column;
+        img {
+          width: 100%;
+          &:last-of-type {
+            display: none;
+          }
+        }
+      } 
+    }
+  }
+}
+// @media all and ( max-width: $m-width) {
+//   .winner {
+//     &_wrap {
+//       margin: 0 20px;
+//     }
+//     &_box {
+//       margin: 50px 0;
+//       &:last-child {
+//         margin: 0;
+//         .winner_box_img {
+//           flex-direction: column-reverse;
+//           img {
+//             &:last-of-type {
+//               width: 100%;
+//             }
+//           }
+//         }
+//       }
+//       &_t {
+//         h3 {
+//           font-size: $fs36;
+//         }
+//         p {
+//           &:nth-of-type(1){
+//             font-size: $fs36; 
+//           }
+//           &:nth-of-type(2) {
+//             margin: 10px 0 0 0;
+//             font-size: $fs14;
+//           }
+//         }
+//       }
+//       &_img {
+//         flex-direction: column;
+//         img {
+//           width: 100%;
+//           &:last-of-type {
+//             display: none;
+//           }
+//         }
+//       } 
+//     }
+//   }
+// }

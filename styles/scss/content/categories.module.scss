@@ -1,0 +1,137 @@
+.categories {
+  &_wrap {
+    padding: 0 20px;
+  }
+  &_table {
+    width: 100%; 
+    margin-top: 80px;
+    tr { 
+      border-left: none !important; 
+      border-right: none !important; 
+      &:first-child { 
+        background-color: #f47743;
+        color: $black;
+        font-weight: $fw800;
+      }
+      td {   
+        text-align: center;
+        padding: 20px 0;
+        font-size: $fs18;
+        &:first-child { 
+          border-left: none !important; 
+        }
+        &:last-child {
+          border-right: none !important;
+        }
+      }  
+    }
+  }
+  &_category {
+    &_1 {
+      margin-top: 150px;
+      h3 {
+        font-size: $fs36;
+        margin-bottom: 20px;
+      }
+      ul {
+        li {
+          font-size: $fs16;
+          margin: 5px 0;
+          padding-left: 20px;
+          position: relative;
+          color: $lightgray;
+          &::before {
+            display: block;
+            position: absolute;
+            content: '';
+            width: 5px;
+            height: 5px;
+            border-radius: 25px;
+            background-color: $lightgray;
+            left: 0;
+            top: 10px;
+          }
+        }
+      }
+    }
+    &_2 {
+      margin-top: 150px;
+      margin-bottom: 100px;
+      h3 {
+        font-size: $fs36;
+        margin-bottom: 20px;
+      }
+      h4 {
+        margin: 30px 0 10px 0;
+        font-size: $fs18;
+        color: $gold; 
+      }
+      ul {
+        li {
+          font-size: $fs16;
+          margin: 5px 0;
+          padding-left: 20px;
+          position: relative;
+          color: $lightgray;
+          &::before {
+            display: block;
+            position: absolute;
+            content: '';
+            width: 5px;
+            height: 5px;
+            border-radius: 25px;
+            background-color: $lightgray;
+            left: 0;
+            top: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media all and ( max-width: $d-width) {
+  .categories {
+    &_table { 
+      tr {  
+        &:first-child { 
+          td {
+            font-size: $fs16;
+          }
+        }
+        td {    
+          font-size: $fs14;
+          padding: 10px 0; 
+        }  
+      }
+    }
+    &_category {
+      &_1 { 
+        h3 {
+          font-size: $fs28; 
+        }
+        ul {
+          li {
+            font-size: $fs14;
+          }
+        }
+      }
+      &_2 {
+        h3 {
+          font-size: $fs28;
+        }
+        h4 {
+          font-size: $fs16;
+        }
+        ul {
+          li {
+            font-size: $fs14;
+          }
+        }
+      }
+    }
+  }
+}
+@media all and ( max-width: $t-width) {}
+@media all and ( max-width: $m-width) {}
