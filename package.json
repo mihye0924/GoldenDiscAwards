@@ -1,15 +1,12 @@
 {
   "name": "golendiscawards",
-  "homepage": "https://mihye0924.github.io/GoldenDiscAwards",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",
     "start": "next start",
-    "lint": "next lint",
-    "predeploy": "npm run build",
-    "deploy": "touch out/.nojekyll && gh-pages -d out --dotfiles"
+    "lint": "next lint"
   },
   "dependencies": {
     "autoprefixer": "10.4.15",
@@ -26,8 +23,5 @@
     "react-js-pagination": "^3.0.3",
     "sass": "^1.66.1",
     "swiper": "^10.2.0"
-  },
-  "devDependencies": {
-    "gh-pages": "^6.0.0"
   }
 }

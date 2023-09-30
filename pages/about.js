@@ -1,11 +1,8 @@
 import Title from "@/components/common/Title";
 import about from "@/styles/scss/content/about.module.scss";   
 import GoogleMapReact from 'google-map-react';
-import Context from '@/context/context';
-import { useContext } from 'react'; 
 
 export default function AboutPage() {     
-  const { prefix } = useContext(Context);
   const API_KEY = 'AIzaSyBppLV6d0uhIXxRrbmWylMUsbKRZBVyuDw'
 
   const defaultProps = {
@@ -23,7 +20,7 @@ export default function AboutPage() {
         <Title name="ABOUT AWARDS" />
       </div>
       <div className={about.about_img}>
-        <img src={`${prefix}/images/content/about/about.png`} alt='about' /> 
+        <img src={`/images/content/about/about.png`} alt='about' /> 
       </div>
       <div className="l-content">
         <div className={about.about_text}>
@@ -89,9 +86,9 @@ export default function AboutPage() {
                 <td>방송</td>
                 <td>
                   <div>
-                    <img src={`${prefix}/images/content/jtbc.png`} alt="jtbc" />
-                    <img src={`${prefix}/images/content/jtbc2.png`} alt="jtbc2" />
-                    <img src={`${prefix}/images/content/jtbc4.png`} alt="jtbc4" />
+                    <img src={`/images/content/jtbc.png`} alt="jtbc" />
+                    <img src={`/images/content/jtbc2.png`} alt="jtbc2" />
+                    <img src={`/images/content/jtbc4.png`} alt="jtbc4" />
                   </div>
                 </td>
               </tr>
@@ -99,9 +96,9 @@ export default function AboutPage() {
                 <td>중계</td>
                 <td>
                   <div>
-                    <img src={`${prefix}/images/content/tiktok_3.png`} alt="tiktok" />
-                    <img src={`${prefix}/images/content/tbc_channel.png`} alt="tbc_channel" />
-                    <img src={`${prefix}/images/content/paravi.png`} alt="paravi" />
+                    <img src={`/images/content/tiktok_3.png`} alt="tiktok" />
+                    <img src={`/images/content/tbc_channel.png`} alt="tbc_channel" />
+                    <img src={`/images/content/paravi.png`} alt="paravi" />
                   </div>
                 </td>
               </tr>
@@ -109,10 +106,10 @@ export default function AboutPage() {
                 <td>협찬</td>
                 <td>
                   <div>
-                    <img src={`${prefix}/images/content/tiktok_3.png`} alt="tiktok" />
-                    <img src={`${prefix}/images/content/baoji.png`} alt="baoji" />
-                    <img src={`${prefix}/images/content/hyundai.png`} alt="hyundai" />
-                    <img src={`${prefix}/images/content/ace.png`} alt="ace" />
+                    <img src={`/images/content/tiktok_3.png`} alt="tiktok" />
+                    <img src={`/images/content/baoji.png`} alt="baoji" />
+                    <img src={`/images/content/hyundai.png`} alt="hyundai" />
+                    <img src={`/images/content/ace.png`} alt="ace" />
                   </div>
                 </td>
               </tr>
@@ -152,26 +149,26 @@ export default function AboutPage() {
             <li>
               <span>방송</span>
               <div>
-                <img src={`${prefix}/images/content/jtbc.png`} alt="jtbc" />
-                <img src={`${prefix}/images/content/jtbc2.png`} alt="jtbc2" />
-                <img src={`${prefix}/images/content/jtbc4.png`} alt="jtbc4" />
+                <img src={`/images/content/jtbc.png`} alt="jtbc" />
+                <img src={`/images/content/jtbc2.png`} alt="jtbc2" />
+                <img src={`/images/content/jtbc4.png`} alt="jtbc4" />
               </div>
             </li> 
             <li>
               <span>중계</span>
               <div>
-                <img src={`${prefix}/images/content/tiktok_3.png`} alt="tiktok" />
-                <img src={`${prefix}/images/content/tbc_channel.png`} alt="tbc_channel" />
-                <img src={`${prefix}/images/content/paravi.png`} alt="paravi" />
+                <img src={`/images/content/tiktok_3.png`} alt="tiktok" />
+                <img src={`/images/content/tbc_channel.png`} alt="tbc_channel" />
+                <img src={`/images/content/paravi.png`} alt="paravi" />
               </div>
             </li> 
             <li>
               <span>협찬</span>
               <div>
-                <img src={`${prefix}/images/content/tiktok_3.png`} alt="tiktok" />
-                <img src={`${prefix}/images/content/baoji.png`} alt="baoji" />
-                <img src={`${prefix}/images/content/hyundai.png`} alt="hyundai" />
-                <img src={`${prefix}/images/content/ace.png`} alt="ace" />
+                <img src={`/images/content/tiktok_3.png`} alt="tiktok" />
+                <img src={`/images/content/baoji.png`} alt="baoji" />
+                <img src={`/images/content/hyundai.png`} alt="hyundai" />
+                <img src={`/images/content/ace.png`} alt="ace" />
               </div>
             </li> 
           </ul>

@@ -5,8 +5,6 @@ import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import Nav from '@/components/layout/Nav';
 import { useState } from 'react'; 
-import { prefix } from '@/config/config'
-import { GolenDiscProvider } from '@/context/context'
 
 export default function App({ Component, pageProps }) { 
   const [show, setShow] = useState(false)
@@ -19,7 +17,7 @@ export default function App({ Component, pageProps }) {
     document.querySelector('body').classList.remove('active')
   }
   return (
-    <GolenDiscProvider value={{prefix}}> 
+    <>
     <Head>
       <title>GoldenDiscAwards</title>
       <meta name="description" content="GoldenDiscAwards" />
@@ -29,6 +27,6 @@ export default function App({ Component, pageProps }) {
       <Nav show={show} onClose={() => {handlClose()}} />
       <Component {...pageProps} /> 
     <Footer />
-    </GolenDiscProvider>
+    </>
   )
 }
