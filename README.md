@@ -6,9 +6,7 @@
 ------------
 
 # Site Link
-https://mihye0924.github.io/GoldenDiscAwards/
-
-------------
+https://mihye0924.github.io/GoldenDiscAwards/ 
 
 # Plan
 > 작업용도: 홈페이지
