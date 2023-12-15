@@ -103,4 +103,5 @@ const nextConfig = {
 #### Development
 <img src="https://github.com/mihye0924/GoldenDiscAwards/assets/71968785/f990ea8b-6073-45fc-8ff7-d98cd53c687c" width="30">
 <img src="https://github.com/mihye0924/react_context_app/assets/71968785/4e1c1159-2dc7-421f-b247-f2d23a86c52f" width="30">
-<img src="https://github.com/mihye0924/react_disney_plus_app/assets/71968785/a381898a-ae03-4f31-bb06-aa7966222f2f" width="30">
+<img src="https://github.com/mihye0924/GoldenDiscAwards/assets/71968785/c715b201-cc4b-4ff7-9d45-1b3429c98a25" width="30">
+
