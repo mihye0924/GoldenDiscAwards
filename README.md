@@ -1,6 +1,6 @@
 
 # Site Link
-[https://react-disney-plus-app-4bcc7.web.app/](https://mihye0924.github.io/GoldenDiscAwards)
+https://mihye0924.github.io/GoldenDiscAwards/
 
 ------------
 # React_disney_plus_app
