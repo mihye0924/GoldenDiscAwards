@@ -1,12 +1,14 @@
 
+# GoldenDiscAwards Site Clone
+ 
+![화면_캡처_2023-09-30_164635](https://github.com/mihye0924/GoldenDiscAwards/assets/71968785/f6a40d00-81fb-4161-bc29-9b7238811797)
+
+------------
+
 # Site Link
 https://mihye0924.github.io/GoldenDiscAwards/
 
 ------------
-# GoldenDiscAwards
- 
-![화면_캡처_2023-09-30_164635](https://github.com/mihye0924/GoldenDiscAwards/assets/71968785/f6a40d00-81fb-4161-bc29-9b7238811797)
-
 
 # Plan
 > 작업용도: 홈페이지
