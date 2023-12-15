@@ -6,9 +6,7 @@
 ------------
 
 # Site Link
-https://mihye0924.github.io/GoldenDiscAwards/ 
-
-# Plan
+https://mihye0924.github.io/GoldenDiscAwards/  
 > 작업용도: 홈페이지
 > 
 > 작업기간: 2023.09.01 ~ 2023.09.15
