@@ -57,32 +57,25 @@ Next는 타입스크립트 설정을 따로 할 필요 없이 사용할 수 있�
 폴더의 경로에 따라 페이지의 경로가 설정되어 구축이 빠르고 관리가 편리하다는 장점이 있다.
 (참고로, next.js는 next/link의 <Link /> 컴포넌트를 사용해서 클라이언트 사이드 네이게이션을 사용해야함)
 
-------------
- 
-
-![image](https://github.com/mihye0924/react_disney_plus_app/assets/71968785/d75fb255-1d67-426f-ab31-e5137e87d605)
-
-![image](https://github.com/mihye0924/react_disney_plus_app/assets/71968785/7eb9fdc8-e445-44b6-accc-abe0ab3d6b21)
-
-![image](https://github.com/mihye0924/react_disney_plus_app/assets/71968785/b5da970b-b412-48bc-94e2-fa32b90982cf)
+------------ 
 
 ## Git Next Deploy
-1.
-gh-pages 설치
+
+#### 1. gh-pages 설치
 ```
 yarn add -D gh-pages
 npm i --save-dev gh-pages
 JavaScript
 ```
 
-2.package.json scripts에 세줄 추가 (및 수정)
+#### 2.package.json scripts에 세줄 추가 (및 수정)
 ```
 "build": "next build && next export",
 "predeploy": "npm run build",
 "deploy": "touch out/.nojekyll && gh-pages -d out --dotfiles"
 ```
 
-3. next.config.js 수정
+#### 3. next.config.js 수정
 ```
 const nextConfig = {
   basePath: "/{레포지토리 이름}",
@@ -90,16 +83,14 @@ const nextConfig = {
 // 메인 레포지토리 (아이디.github.io) 라면 /로 적는다 
 ```
 
-4.
-yarn deploy를 입력한다.
+####4. yarn deploy를 입력한다.
 
-5.
-Repository 설정에서 gh-pages 브랜치를 골라준다.  
+####5. Repository 설정에서 gh-pages 브랜치를 골라준다.  
 ![image](https://github.com/mihye0924/GoldenDiscAwards/assets/71968785/8b6f528d-ad59-406d-b746-3f2a242ace7d)
 
 ------------
  
-## React Stacks
+## Stacks
 
 #### Environment    
 <img src="https://github.com/mihye0924/react_context_app/assets/71968785/6e825b86-c259-48c2-a272-4286e74d9798" width="30">
