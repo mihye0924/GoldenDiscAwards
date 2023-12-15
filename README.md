@@ -83,9 +83,9 @@ const nextConfig = {
 // 메인 레포지토리 (아이디.github.io) 라면 /로 적는다 
 ```
 
-####4. yarn deploy를 입력한다.
+#### 4. yarn deploy를 입력한다.
 
-####5. Repository 설정에서 gh-pages 브랜치를 골라준다.  
+#### 5. Repository 설정에서 gh-pages 브랜치를 골라준다.  
 ![image](https://github.com/mihye0924/GoldenDiscAwards/assets/71968785/8b6f528d-ad59-406d-b746-3f2a242ace7d)
 
 ------------
