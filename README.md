@@ -90,16 +90,9 @@ const nextConfig = {
  
 ## Stacks
 
-#### Environment    
-<img src="https://github.com/mihye0924/react_context_app/assets/71968785/6e825b86-c259-48c2-a272-4286e74d9798" width="30">
-<img src="https://github.com/mihye0924/react_context_app/assets/71968785/557f00bf-2f5f-4bc9-9d63-10565250d6f9" width="30">
-<img src="https://github.com/mihye0924/react_context_app/assets/71968785/64f67e8b-759f-4063-a3bc-29dc3918e44b" width="30"> 
+<img style="display:inline-block;"  alt="Static Badge" src="https://img.shields.io/badge/JAVASCRIPT-F7DF1E?logo=JAVASCRIPT&logoColor=white"> 
+<img style="display:inline-block;" alt="Static Badge" src="https://img.shields.io/badge/Sass-CC6699?logo=Sass&logoColor=white">
+ 
 
-#### Config
-<img src="https://github.com/mihye0924/react_context_app/assets/71968785/64725c2b-af8d-4891-9ef1-f1068d1fd019" width="30">
 
-#### Development
-<img src="https://github.com/mihye0924/GoldenDiscAwards/assets/71968785/f990ea8b-6073-45fc-8ff7-d98cd53c687c" width="30">
-<img src="https://github.com/mihye0924/react_context_app/assets/71968785/4e1c1159-2dc7-421f-b247-f2d23a86c52f" width="30">
-<img src="https://github.com/mihye0924/GoldenDiscAwards/assets/71968785/c715b201-cc4b-4ff7-9d45-1b3429c98a25" width="30">
 
