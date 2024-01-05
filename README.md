@@ -89,7 +89,7 @@ const nextConfig = {
 ------------
  
 ## Stacks
-<img style="display:inline-block;"  alt="Static Badge" src="https://img.shields.io/badge/JAVASCRIPT-F7DF1E?logo=NEXT&logoColor=white"> <img style="display:inline-block;"  alt="Static Badge" src="https://img.shields.io/badge/JAVASCRIPT-F7DF1E?logo=JAVASCRIPT&logoColor=white"> <img style="display:inline-block;" alt="Static Badge" src="https://img.shields.io/badge/Sass-CC6699?logo=Sass&logoColor=white">
+<img style="display:inline-block;"  alt="Static Badge" src="https://img.shields.io/badge/NEXTJS?logo=NEXTJS&logoColor=white"> <img style="display:inline-block;"  alt="Static Badge" src="https://img.shields.io/badge/JAVASCRIPT-F7DF1E?logo=JAVASCRIPT&logoColor=white"> <img style="display:inline-block;" alt="Static Badge" src="https://img.shields.io/badge/Sass-CC6699?logo=Sass&logoColor=white">
  
 
 
