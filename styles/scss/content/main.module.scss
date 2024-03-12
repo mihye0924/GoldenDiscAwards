@@ -124,6 +124,7 @@
     &_title {
       &_b {
         font-size: 9px;
+        padding-right: 20px;
         opacity: 0.8;
       }
       &_t {
@@ -132,6 +133,7 @@
         word-break: break-all;
         p { 
           text-align: center;
+          word-break: break-word;
           &:last-child { 
             font-size: $fs22; 
           }

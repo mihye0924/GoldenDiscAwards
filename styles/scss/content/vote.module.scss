@@ -297,6 +297,11 @@
         }
       }
     }
+    &_img {
+      img {
+        height: 15px;
+      }
+    }
   } 
   .vote2 {
     &_wrap {

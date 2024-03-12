@@ -180,24 +180,32 @@
         }
       }
     }
-    &_table {
-      colgroup {
-        col {
-          &:nth-of-type(1) {
-            width: 2% !important;
+    &_list {
+      &_table {
+        colgroup {
+          col {
+            &:nth-of-type(1) {
+              width: 2% !important;
+            }
           }
         }
-      }
-      th {
-        padding: 10px;
-        font-size: $fs14;
-      }
-      tr {
-        td {
-          padding: 10px;
-          font-size: $fs12;
-        } 
+        tbody { 
+          tr {
+            th {
+              padding: 10px;
+              font-size: $fs14;
+              padding: 15px;
+              white-space: pre;
+            }
+            td {
+              padding: 10px;
+              font-size: $fs12;
+              padding: 15px;
+            } 
+          }
+        }
       }
     }
   }
 }
+
