@@ -24,8 +24,8 @@ export default function NoticePage() {
         <table className={`table ${notice.notice_table}`}>
           <colgroup>
             <col width="10%" /> 
-            <col width="70%" /> 
-            <col width="20%" />
+            <col width="80%" /> 
+            <col width="10%" />
           </colgroup>
           <tbody>
             <tr>
